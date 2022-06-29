@@ -235,14 +235,14 @@
     transform: rotate(305deg) ;
     text-decoration: none;
     position: absolute;
-    animation: enlargeHand 300ms ease-in-out 300ms;
+    animation: enlargeHand 300ms ease-in-out 1500ms;
     
   
 }
 
 @keyframes enlargeHand {
   from{
-    transform: rotate(305deg) scale(1.8);
+    transform: rotate(305deg) scale(2);
   }
   to{
     transform:rotate(305deg) scale(1);
