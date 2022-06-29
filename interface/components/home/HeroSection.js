@@ -4,11 +4,8 @@ import React from "react";
 import AdinkraHeroBack from "../../assets/svgs/AdinkraHeroBack";
 import heroprofile from "../../assets/images/heroprofile.png";
 
-
-
 import Image from "next/image";
 import { BackSVG } from "../../assets/svgs/BackSVG";
-
 
 const HeroSection = () => {
 	const route = useRouter();
@@ -75,7 +72,11 @@ const HeroSection = () => {
 						<div className="herosection-content-text-wrapper">
 							<span className="herosection-content-text-boldtext-wrapper">
 								<p className="herosection-content-heading">
-									Hola!🤙🏿 I am <strong>Osk</strong>
+									Hola!<s>🤙🏿</s>
+									<span> {"h "}</span> <span> {"."}</span> I
+									am
+                                    {" "}
+									<strong>Osk</strong>
 								</p>
 								<p className="herosection-content-heading-details">
 									I build websites and <br></br> Web
@@ -158,7 +159,7 @@ const HeroSection = () => {
 							<div className="herosection-content-cv-theme-container">
 								<span className="herosection-content-theme-wrapper"></span>
 								<span className="download-cv">
-                                    <span></span>
+									<span></span>
 									<p>Download my CV</p>
 								</span>
 							</div>

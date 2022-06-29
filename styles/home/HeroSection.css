@@ -14,7 +14,7 @@
 .herosection-wrapper::after {
     position: absolute;
     content: '';
-    background-color: rgba(255, 255, 255, 0.84);
+    background-color: rgba(255, 255, 255, 0.87);
     display: grid;
     inset: 0;
 }
@@ -228,6 +228,18 @@
 
 .herosection-content-heading strong {
     color: #A07C00;
+}
+
+.herosection-content-heading s {
+    transform: rotate(305deg) ;
+    text-decoration: none;
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+.herosection-content-heading span {
+color: transparent;
 }
 
 .herosection-content-heading-details {
