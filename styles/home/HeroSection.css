@@ -224,6 +224,7 @@
 .herosection-content-heading {
     font-size: 3.5rem;
     color: #262D27;
+    white-space: nowrap;
 }
 
 .herosection-content-heading strong {
@@ -234,16 +235,23 @@
     transform: rotate(305deg) ;
     text-decoration: none;
     position: absolute;
-    padding-left: 3px;
-    padding-right: px;
+    animation: enlargeHand 300ms ease-in-out 300ms;
+    
+  
 }
 
 @keyframes enlargeHand {
-
+  from{
+    transform: rotate(305deg) scale(1.8);
+  }
+  to{
+    transform:rotate(305deg) scale(1);
+  }
 }
 
 .herosection-content-heading span {
 color: transparent;
+
 }
 
 .herosection-content-heading-details {
@@ -706,7 +714,7 @@ font-weight: 500;
     }
 
     .herosection-content-heading {
-        font-size: 2.3rem;
+        font-size: 2.15rem;
     }
 
     .herosection-content-heading-details {

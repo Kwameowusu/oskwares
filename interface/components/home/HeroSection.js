@@ -73,9 +73,8 @@ const HeroSection = () => {
 							<span className="herosection-content-text-boldtext-wrapper">
 								<p className="herosection-content-heading">
 									Hola!<s>🤙🏿</s>
-									<span> {"h "}</span> <span> {"."}</span> I
-									am
-                                    {" "}
+									<span> {"h "}</span>
+									<span> {"."}</span> I am {" "}
 									<strong>Osk</strong>
 								</p>
 								<p className="herosection-content-heading-details">
