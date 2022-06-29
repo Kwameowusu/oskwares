@@ -332,8 +332,8 @@
     width: 310px;
     height: 230px;
     /* background-color: rgba(255, 255, 255, 0.922); */
-    background-color: #ffffff38;
-    backdrop-filter: blur(15px);
+    background-color: hsla(0, 0%, 100%, 0.82);
+    /* backdrop-filter: blur(15px); */
     z-index: 100;
     border-radius: 20px;
     position: absolute;
@@ -656,7 +656,9 @@ font-weight: 500;
         right: 100px;
         top: 600px;
     }
-
+.herosection-navbar-brand-name p{
+    font-size: 1.8rem;
+}
 
     .herosection-nav-buttons-wrapper {
         display: none;
