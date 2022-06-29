@@ -1,0 +1,6 @@
+.homescreen-wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    /* background-color: #F0F4F2; */
+    justify-content: center;
+}
