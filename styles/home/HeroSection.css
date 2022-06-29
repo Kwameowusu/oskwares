@@ -234,8 +234,12 @@
     transform: rotate(305deg) ;
     text-decoration: none;
     position: absolute;
-    padding-left: 5px;
-    padding-right: 2px;
+    padding-left: 3px;
+    padding-right: px;
+}
+
+@keyframes enlargeHand {
+
 }
 
 .herosection-content-heading span {
