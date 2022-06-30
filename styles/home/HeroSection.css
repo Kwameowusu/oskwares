@@ -628,7 +628,7 @@ animation: mymove 2s infinite 100ms alternate;
     top: 40px;
     display: flex;
     align-items: center;
-/* animation: mymove 2.5s infinite alternate; */
+animation: mymove 2.5s infinite alternate;
 }
 
 
@@ -655,7 +655,7 @@ animation: mymove 2s infinite 100ms alternate;
     top: 430px;
     display: flex;
     align-items: center;
-/* animation: mymove 2.5s infinite 200ms alternate; */
+animation: mymove 2.5s infinite 200ms alternate;
 
 }
 
@@ -672,7 +672,7 @@ animation: mymove 2s infinite 100ms alternate;
     top: 200px;
     display: flex;
     align-items: center;
-/* animation: mymove 2.5s infinite 300ms alternate; */
+animation: mymove 2.5s infinite 300ms alternate;
 }
 
 .herosection-content-image-tag-dot {

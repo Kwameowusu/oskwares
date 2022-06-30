@@ -293,6 +293,16 @@ body {
     }
 }
 
+@keyframes mymove2 {
+    0% {
+        top: -10px;
+    }
+
+    100% {
+        top: 10px;
+    }
+}
+
 @keyframes myswing {
     0% {
             transform: rotate(15deg);
