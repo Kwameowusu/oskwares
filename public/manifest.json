@@ -1,0 +1,30 @@
+{
+	"short_name": "Oskwares",
+	"name": "Oskwares",
+	"description": "Boye Owusu Kwame popularly none as OSK is a web developer who build website and web applications. You can hire or contract him for your web projects",
+	"dir": "ltr",
+	"version": "1.0",
+	"lang": "en-US",
+	"orientation": "portrait",
+	"icons": [
+		{
+			"src": "favicon.ico",
+			"sizes": "16x16",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "logo192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "logo512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/",
+	"id": "/",
+	"scope": "/",
+	"display": "standalone"
+}

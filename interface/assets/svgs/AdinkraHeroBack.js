@@ -1,6 +1,6 @@
 import React from "react";
 
-const AdinkraHeroBack = () => {
+const AdinkraHeroBack = ({ ...props }) => {
 	return (
 		<>
 			<svg
@@ -8,7 +8,8 @@ const AdinkraHeroBack = () => {
 				height="826"
 				viewBox="0 0 683 826"
 				fill="none"
-				xmlns="http://www.w3.org/2000/svg">
+				xmlns="http://www.w3.org/2000/svg"
+				{...props}>
 				<path
 					d="M63.9174 21.0703C56.361 35.6502 49.4232 43.0482 34.2579 43.0482C19.0926 43.0482 10.5586 35.0153 4.59577 21.0703C0.0525419 36.5391 14.6709 54.0937 34.2579 54.0937C53.8449 54.0937 67.632 36.7601 63.9174 21.0703Z"
 					fill="#A7A881"

@@ -1,14 +1,35 @@
+import React, { useContext } from "react";
+
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
 import AdinkraHeroBack from "../../assets/svgs/AdinkraHeroBack";
 import heroprofile from "../../assets/images/heroprofile.png";
 
 import Image from "next/image";
 import { BackSVG } from "../../assets/svgs/BackSVG";
+import {
+	DotsHorizonIcons,
+	DownloadIcon,
+	FacebookIcon,
+	GitHubIcon,
+	InstagramIcon,
+	LinkedInIcon,
+	MoonIcon,
+	TwitterIcon,
+} from "../../assets/Icons";
+import { ActionContext } from "../../lib/contextapis/ActionsProviders";
+import AboutOverlay from "../overlays/AboutOverlay";
+import { Slide } from "react-awesome-reveal";
 
 const HeroSection = () => {
+	const { setopenabout } = useContext(ActionContext);
+
 	const route = useRouter();
+	const active = {
+		backgroundColor: "#ffffff",
+		paddingLeft: "18px",
+		fontWeight: "700",
+	};
 	return (
 		<>
 			<div className="herosection-wrapper">
@@ -32,7 +53,52 @@ const HeroSection = () => {
 								<p>Oskwares</p>
 							</span>
 							<div className="herosection-navbar-menu-button-wrapper">
-								<span className="herosection-navbar-menu-button"></span>
+								<div className="herosection-navbar-menu-button-container">
+									<button className="herosection-navbar-menu-button">
+										<DotsHorizonIcons
+											style={{
+												color: "#828282",
+												fontSize: "18px",
+											}}
+										/>
+									</button>
+									<div className="home-pages-routes-dropdown">
+										<span className="home-pages-routes-inner-name-wrapper">
+											<span
+												style={
+													route.pathname === "/"
+														? active
+														: {}
+												}
+												className="home-pages-routes-inner-name-container">
+												<Link href="/">Home</Link>
+											</span>
+										</span>
+										<span className="home-pages-routes-inner-name-wrapper">
+											<span
+												style={
+													route.pathname ===
+													"/#projects"
+														? active
+														: {}
+												}
+												className="home-pages-routes-inner-name-container">
+												<Link href="/#showcase">
+													Showcase
+												</Link>
+											</span>
+										</span>
+										<span className="home-pages-routes-inner-name-wrapper">
+											<span
+												onClick={() => {
+													setopenabout(true);
+												}}
+												className="home-pages-routes-inner-name-container">
+												<p>About Us</p>
+											</span>
+										</span>
+									</div>
+								</div>
 							</div>
 							<div className="herosection-nav-buttons-wrapper">
 								<Link
@@ -60,7 +126,11 @@ const HeroSection = () => {
 								</Link>
 								<div className="herosection-nav-button-about">
 									<div className="herosection-nav-button-link-container">
-										<span className="herosection-nav-button-link">
+										<span
+											onClick={() => {
+												setopenabout(true);
+											}}
+											className="herosection-nav-button-link">
 											<p>About</p>
 										</span>
 									</div>
@@ -74,7 +144,7 @@ const HeroSection = () => {
 								<p className="herosection-content-heading">
 									Hola!<s>🤙🏿</s>
 									<span> {"h "}</span>
-									<span> {"."}</span> I am {" "}
+									<span> {"."}</span> I am{" "}
 									<strong>Osk</strong>
 								</p>
 								<p className="herosection-content-heading-details">
@@ -90,21 +160,53 @@ const HeroSection = () => {
 							</div>
 							<div className="herosection-content-social-wrapper">
 								<button className="github">
-									<p>G</p>
+									<GitHubIcon
+										style={{
+											color: "white",
+											fontSize: "26px",
+										}}
+									/>
 								</button>
 								<span className="herosection-content-social-container">
-									<button className="twitter">
-										<p>T</p>
-									</button>
-									<button className="twitter">
-										<p>W</p>
-									</button>
-									<button className="twitter">
-										<p>I</p>
-									</button>
-									<button className="twitter">
-										<p>F</p>
-									</button>
+									<Slide
+										// triggerOnce="true"
+										direction="up"
+										cascade="true"
+										duration={300}
+										fraction={0.8}>
+										<button className="twitter">
+											<TwitterIcon
+												style={{
+													color: "white",
+													fontSize: "18px",
+												}}
+											/>
+										</button>
+										<button className="twitter">
+											<FacebookIcon
+												style={{
+													color: "white",
+													fontSize: "18px",
+												}}
+											/>
+										</button>
+										<button className="twitter">
+											<LinkedInIcon
+												style={{
+													color: "white",
+													fontSize: "18px",
+												}}
+											/>
+										</button>
+										<button className="twitter">
+											<InstagramIcon
+												style={{
+													color: "white",
+													fontSize: "18px",
+												}}
+											/>
+										</button>
+									</Slide>
 								</span>
 							</div>
 						</div>
@@ -118,7 +220,7 @@ const HeroSection = () => {
 										src={heroprofile.src}
 										// objectFit="cover"
 										// layout="fill"
-										width={310}
+										width={320}
 										height={480}
 									/>
 								</span>
@@ -156,9 +258,24 @@ const HeroSection = () => {
 						</div>
 						<div className="herosection-content-cv-theme-wrapper">
 							<div className="herosection-content-cv-theme-container">
-								<span className="herosection-content-theme-wrapper"></span>
+								<span className="herosection-content-theme-wrapper">
+									<MoonIcon
+										style={{
+											color: "#4F4F4F",
+											fontSize: "30px",
+										}}
+									/>
+								</span>
 								<span className="download-cv">
-									<span></span>
+									<span className="download-cv-icon">
+										{" "}
+										<DownloadIcon
+											style={{
+												color: "#828282",
+												fontSize: "25px",
+											}}
+										/>{" "}
+									</span>
 									<p>Download my CV</p>
 								</span>
 							</div>
@@ -166,6 +283,7 @@ const HeroSection = () => {
 					</div>
 				</div>
 			</div>
+			<AboutOverlay />
 		</>
 	);
 };
