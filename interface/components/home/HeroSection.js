@@ -179,7 +179,7 @@ const HeroSection = () => {
 								</button>
 								<span className="herosection-content-social-container">
 									<Slide
-										// triggerOnce="true"
+										triggerOnce="true"
 										direction="up"
 										cascade="true"
 										duration={500}
