@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect } from "react";
 
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -22,7 +22,7 @@ import AboutOverlay from "../overlays/AboutOverlay";
 import { Slide } from "react-awesome-reveal";
 
 const HeroSection = () => {
-	const { setopenabout } = useContext(ActionContext);
+	const {openabout, setopenabout } = useContext(ActionContext);
 
 	const route = useRouter();
 	const active = {
@@ -30,6 +30,16 @@ const HeroSection = () => {
 		paddingLeft: "18px",
 		fontWeight: "700",
 	};
+
+    	useEffect(() => {
+			if (openabout === true) {
+				document.querySelector("body").style.overflow = "hidden";
+			}
+			if (openabout === null || openabout === false)
+				document.querySelector("body").style.overflow = "initial";
+		}, [openabout]);
+
+
 	return (
 		<>
 			<div className="herosection-wrapper">
@@ -172,8 +182,10 @@ const HeroSection = () => {
 										// triggerOnce="true"
 										direction="up"
 										cascade="true"
-										duration={300}
-										fraction={0.8}>
+										duration={500}
+										fraction={0.8}
+                                        
+                                        >
 										<button className="twitter">
 											<TwitterIcon
 												style={{

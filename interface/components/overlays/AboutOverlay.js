@@ -15,7 +15,7 @@ const AboutOverlay = () => {
 		<>
 			<AnimateTransition
 				promptWrapeprClassName="yes"
-				timeOut="400"
+				timeOut="300"
 				EnterAnimate="slideInUp"
 				ExitAnimate="slideOutDown"
 				detailsError={openabout}
