@@ -346,7 +346,7 @@
 }
 
 .herosection-content-heading s {
-    transform: rotate(305deg);
+    transform: rotate(285deg);
     text-decoration: none;
     position: absolute;
     animation: enlargeHand 300ms ease-in-out 1300ms;
