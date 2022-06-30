@@ -285,11 +285,11 @@ body {
 
 @keyframes mymove {
     0% {
-        margin-top: -5px;
+        top: -10px;
     }
 
     100% {
-        margin-top: 15px;
+        top: 10px;
     }
 }
 

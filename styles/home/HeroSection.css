@@ -476,14 +476,14 @@
     margin-top: 50px;
     margin-left: 20px;
     transform: rotate(32deg);
-
+animation: mymove 2s infinite 100ms alternate;
 
 }
 
 .herosection-content-image-back svg {
     transform: rotate(325deg);
+    /* position: absolute; */
     /* border-radius: 46% 54% 72% 28% / 70% 24% 76% 30%; */
-animation: mymove 2s infinite 100ms alternate;
 
 }
 
