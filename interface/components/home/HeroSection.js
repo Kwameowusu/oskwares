@@ -272,6 +272,7 @@ const HeroSection = () => {
 							<div className="herosection-content-cv-theme-container">
 								<span className="herosection-content-theme-wrapper">
 									<MoonIcon
+                                    className="moon"
 										style={{
 											color: "#4F4F4F",
 											fontSize: "30px",

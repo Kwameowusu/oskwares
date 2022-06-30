@@ -346,21 +346,22 @@
 }
 
 .herosection-content-heading s {
-    transform: rotate(285deg);
+    /* transform: rotate(285deg); */
     text-decoration: none;
     position: absolute;
-    animation: enlargeHand 300ms ease-in-out 1300ms;
+    animation: enlargeHand 2s infinite 800ms alternate;
+    /* animation:  1s ease-in-out 1300ms; */
 
 
 }
 
 @keyframes enlargeHand {
     from {
-        transform: rotate(305deg) scale(2);
+        transform: rotate(305deg) scale(1.2);
     }
 
     to {
-        transform: rotate(305deg) scale(1);
+        transform: rotate(305deg) scale(0.6);
     }
 }
 
@@ -376,7 +377,7 @@
     }
 
     to {
-        width: 100%
+        width: 140%
     }
 }
 
@@ -482,6 +483,7 @@
 .herosection-content-image-back svg {
     transform: rotate(325deg);
     /* border-radius: 46% 54% 72% 28% / 70% 24% 76% 30%; */
+animation: mymove 2s infinite 100ms alternate;
 
 }
 
@@ -514,6 +516,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .herosection-content-image-services-container {
@@ -524,6 +527,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+
 }
 
 .herosection-content-image-services-container svg {
@@ -562,6 +566,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: #B06C6C;
+animation: mymove 2s infinite alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot2 {
@@ -569,6 +574,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: #BE93B2;
+animation: mymove 2s infinite  alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot3 {
@@ -576,6 +582,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: #D3C593;
+animation: mymove 2s infinite  alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot4 {
@@ -583,6 +590,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: #86B974;
+animation: mymove 2s infinite  alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot5 {
@@ -590,6 +598,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: #87C7C7;
+animation: mymove 2s infinite  alternate;
 }
 
 .herosection-content-image-service-text-wrapper {
@@ -602,6 +611,7 @@
     flex-direction: column;
     font-weight: bold;
     font-size: 1rem;
+animation: mymove 2s infinite alternate;
 }
 
 
@@ -618,8 +628,10 @@
     top: 40px;
     display: flex;
     align-items: center;
-
+animation: mymove 2.5s infinite alternate;
 }
+
+
 
 .herosection-content-image-tag1 p,
 .herosection-content-image-tag2 p,
@@ -643,6 +655,8 @@
     top: 430px;
     display: flex;
     align-items: center;
+animation: mymove 2.5s infinite 200ms alternate;
+
 }
 
 .herosection-content-image-tag3 {
@@ -658,6 +672,7 @@
     top: 200px;
     display: flex;
     align-items: center;
+animation: mymove 2.5s infinite 300ms alternate;
 }
 
 .herosection-content-image-tag-dot {
@@ -686,6 +701,10 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
+}
+
+.herosection-content-cv-theme-container .moon {
+animation: myswing 1s ease-in-out infinite  alternate;
 }
 
 .herosection-content-cv-theme-container .download-cv {
