@@ -5,14 +5,19 @@ import "../styles/home/HomeScreen.css";
 import "../styles/home/HeroSection.css";
 import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }) {
+    const [isMounted, setIsMounted] = useState(false);
+     useEffect(() => {
+			setIsMounted(true);
+		}, []);
       
 	return (
 		<>
 			<ThemeProvider>
 				<ActionProvider>
-					<Component {...pageProps} />
+					{isMounted && <Component {...pageProps} />}
 				</ActionProvider>
 			</ThemeProvider>
 		</>

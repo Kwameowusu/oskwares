@@ -11,6 +11,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
+                    
 					<meta charSet="utf-8" />
 					<meta name="robots" content="index, follow" />
 					<meta name="googlebot" content="index,follow" />
@@ -26,9 +27,10 @@ class MyDocument extends Document {
 					<link rel="apple-touch-icon" href="/logo192.png" />
 					{/* <script src="https://www.paypal.com/sdk/js?client-id=AUUfR9lIbZPoDdDD5rwCe1D_ekfCsnAL5-rnFy0Zjc_qah80jHEUfwUtd5WqvUdOw_sCnMLWqd1PWao-&currency=USD"  ></script> */}
 				</Head>
-				<body className="light">
+				<body className="dark">
 					<Main />
 					<NextScript />
+                    <script src=""></script>
 				</body>
 			</Html>
 		);

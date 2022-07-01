@@ -6,16 +6,16 @@ const ThemeProvider = ({ children }) => {
 	const [theme, settheme] = useState(false);
 
 	useEffect(() => {
-		const darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
+		const darkTheme = window.matchMedia("(prefers-color-scheme: light)");
 		const currentTheme = localStorage.getItem("theme");
 
-		if (darkTheme.matches && currentTheme === null) setdashtheme("dark");
+		if (darkTheme.matches && currentTheme === null) setdashtheme("light");
 		else if (currentTheme !== null) setdashtheme(currentTheme);
 	}, []);
 
 	useEffect(() => {
 		let body = document.getElementsByTagName("BODY")[0];
-		console.log(dashtheme);
+		// console.log(dashtheme);
 
 		if (dashtheme) {
 			localStorage.setItem("theme", dashtheme);
@@ -34,7 +34,7 @@ const ThemeProvider = ({ children }) => {
 	};
 
 	return (
-		<ThemeContext.Provider value={{ theme, Changetheme }}>
+		<ThemeContext.Provider value={{ theme,dashtheme, Changetheme }}>
 			{children}
 		</ThemeContext.Provider>
 	);

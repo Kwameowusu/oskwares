@@ -1,34 +1,10 @@
-const kofi = 1;
-const ama = 5;
-
-if (kofi < ama) {
-	console.log(kofi + ama);
-} else {
-	console.log("wow");
-}
-
-for (let man = 0; man < 5; man++) {
-	console.log(man);
-}
-
-let gof = {
-    h: 1,
-    gg: 2
-}
-
-function obed(){
-return {
-    h:'jk',
-    jj: 1,
-    kk: [123,"trre"],
-    uu: {
-
-    },
-    gg: function(){
-
-    }
-}
-}
-
-
-obed()
+(function () {
+	try {
+		var mode = localStorage.getItem("mode");
+		var supportDarkMode =
+			window.matchMedia("(prefers-color-scheme: dark)").matches === true;
+		if (!mode && supportDarkMode) document.body.classList.add("theme-dark");
+		if (!mode) return;
+		document.body.classList.add("theme-" + mode);
+	} catch (e) {}
+})();
