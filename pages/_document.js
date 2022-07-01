@@ -26,6 +26,7 @@ class MyDocument extends Document {
 					/>
 					<link rel="apple-touch-icon" href="/logo192.png" />
 					{/* <script src="https://www.paypal.com/sdk/js?client-id=AUUfR9lIbZPoDdDD5rwCe1D_ekfCsnAL5-rnFy0Zjc_qah80jHEUfwUtd5WqvUdOw_sCnMLWqd1PWao-&currency=USD"  ></script> */}
+                    
 				</Head>
 				<body className="dark">
 					<Main />

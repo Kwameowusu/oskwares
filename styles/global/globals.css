@@ -13,7 +13,7 @@
     user-select: none;
     font-family: "Montserrat", sans-serif;
     -webkit-tap-highlight-color: transparent;
-        /* transition: all 900ms ease-in; */
+        /* transition: all 200ms ease-in; */
 
 
 
@@ -32,6 +32,10 @@
     --grey: #2e302e;
 }
 
+body,html{
+    background-color: var(--backgroundColor);
+}
+
 .light {
 
     --deepTextColor: #262d27;
@@ -41,7 +45,7 @@
 
 
 
-    --iconCircle: #eaede9;
+    --iconCircle: #edede9;
     --servBackgroundColor: hsla(0, 0%, 100%, 0.82);
     --backgroundColor: white;
     --SecondBackgroundColor: rgb(255, 255, 255);

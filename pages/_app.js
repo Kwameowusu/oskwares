@@ -5,19 +5,19 @@ import "../styles/home/HomeScreen.css";
 import "../styles/home/HeroSection.css";
 import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
-import { useEffect, useState } from "react";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
-    const [isMounted, setIsMounted] = useState(false);
-     useEffect(() => {
-			setIsMounted(true);
-		}, []);
+    
       
 	return (
 		<>
+		
+			<Script src="/noflash.js" strategy="beforeInteractive" />
+
 			<ThemeProvider>
 				<ActionProvider>
-					{isMounted && <Component {...pageProps} />}
+					<Component {...pageProps} />
 				</ActionProvider>
 			</ThemeProvider>
 		</>
