@@ -15,11 +15,26 @@ const ThemeProvider = ({ children }) => {
 
 	useEffect(() => {
 		let body = document.getElementsByTagName("BODY")[0];
-		// console.log(dashtheme);
+		// let meta = document.createElement("meta");
+		// meta.name = "theme-color";
+		let meta = [...document.querySelectorAll("meta")].find(
+			(e) => e.name === "theme-color"
+		);
 
 		if (dashtheme) {
 			localStorage.setItem("theme", dashtheme);
 			body.classList.replace(body.className, dashtheme);
+
+			if (body.className === "dark") {
+				meta.content = "#000000";
+				// document.head.appendChild(meta);
+				return;
+			}
+			if (body.className === "light") {
+				meta.content = "#ffffff";
+				// document.head.appendChild(meta);
+				return;
+			}
 		}
 	}, [dashtheme]);
 
