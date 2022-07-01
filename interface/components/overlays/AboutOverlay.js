@@ -54,7 +54,7 @@ const AboutOverlay = () => {
 						</div>
 						<div className="aboutoverlay-brand-story">
 							<span className="aboutoverlay-brand-story-header">
-								<h3> YOKA KNUST</h3>
+								<h3>Oskwares</h3>
 							</span>
 							<p className="about">
 								I'm Boye Owusu Kwame. A web developer and

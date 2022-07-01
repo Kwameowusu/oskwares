@@ -128,7 +128,8 @@ const HeroSection = () => {
 									<div className="herosection-nav-button-link-container">
 										<span
 											className={`herosection-nav-button-link ${
-												route.asPath === "/"
+												route.asPath === "/" ||
+												route.asPath === "/#showcase"
 													? "herosection-nav-button-link-active"
 													: ""
 											}`}>
