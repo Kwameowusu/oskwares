@@ -15,6 +15,7 @@ import {
 	InstagramIcon,
 	LinkedInIcon,
 	MoonIcon,
+	SunIcon,
 	TwitterIcon,
 } from "../../assets/Icons";
 import { ActionContext } from "../../lib/contextapis/ActionsProviders";
@@ -24,7 +25,7 @@ import { ThemeContext } from "../../lib/contextapis/ThemeProvider";
 
 const HeroSection = () => {
 	const { openabout, setopenabout } = useContext(ActionContext);
-    const { Changetheme } = useContext(ThemeContext);
+	const { Changetheme, dashtheme } = useContext(ThemeContext);
 
 	const route = useRouter();
 	const active = {
@@ -283,13 +284,23 @@ const HeroSection = () => {
 								<span
 									onClick={Changetheme}
 									className="herosection-content-theme-wrapper">
-									<MoonIcon
-										className="moon"
-										style={{
-											color: "var(--faintTextColor)",
-											fontSize: "30px",
-										}}
-									/>
+									{dashtheme === "light" ? (
+										<MoonIcon
+											className="moon"
+											style={{
+												color: "var(--faintTextColor)",
+												fontSize: "30px",
+											}}
+										/>
+									) : (
+										<SunIcon
+											className="sun"
+											style={{
+												color: "var(--faintTextColor)",
+												fontSize: "30px",
+											}}
+										/>
+									)}
 								</span>
 								<span className="download-cv">
 									<span className="download-cv-icon">

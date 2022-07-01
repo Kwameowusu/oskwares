@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from "react";
 export const ThemeContext = createContext("");
 const ThemeProvider = ({ children }) => {
 	const [dashtheme, setdashtheme] = useState("");
-	const [theme, settheme] = useState(false);
+	// const [theme, settheme] = useState(false);
 
 	useEffect(() => {
 		const darkTheme = window.matchMedia("(prefers-color-scheme: light)");
@@ -34,7 +34,7 @@ const ThemeProvider = ({ children }) => {
 	};
 
 	return (
-		<ThemeContext.Provider value={{ theme,dashtheme, Changetheme }}>
+		<ThemeContext.Provider value={{ dashtheme, Changetheme }}>
 			{children}
 		</ThemeContext.Provider>
 	);

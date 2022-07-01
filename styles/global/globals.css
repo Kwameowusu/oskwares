@@ -45,7 +45,7 @@ body,html{
 
 
 
-    --iconCircle: #edede9;
+    --iconCircle: #ffffff;
     --servBackgroundColor: hsla(0, 0%, 100%, 0.82);
     --backgroundColor: white;
     --SecondBackgroundColor: rgb(255, 255, 255);
@@ -352,6 +352,16 @@ body {
     }
 
     100% {
-        transform: rotate(-15deg);
+        transform: rotate(-185deg);
+    }
+}
+
+@keyframes myspin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

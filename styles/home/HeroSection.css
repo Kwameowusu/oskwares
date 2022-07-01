@@ -746,6 +746,10 @@
     animation: myswing 1s ease-in-out infinite alternate;
 }
 
+.herosection-content-cv-theme-container .sun {
+    animation: myspin 2s ease-in-out infinite alternate-reverse;
+}
+
 .herosection-content-cv-theme-container .download-cv {
     margin-top: -140px;
     font-weight: 500;
