@@ -72,45 +72,50 @@ const HeroSection = () => {
 										/>
 									</button>
 									<div className="home-pages-routes-dropdown">
-										<span
-											className={`home-pages-routes-inner-name-wrapper ${
-												route.pathname === "/"
-													? "home-pages-routes-inner-name-wrapper2"
-													: ""
-											} `}>
-											<span
-												style={
-													route.pathname === "/"
-														? active
-														: {}
-												}
-												className="home-pages-routes-inner-name-container">
-												<Link href="/">Home</Link>
+										<div className="home-pages-routes-dropdown-container">
+											<Link href="/">
+												<span
+													className={`home-pages-routes-inner-name-wrapper ${
+														route.pathname === "/"
+															? "home-pages-routes-inner-name-wrapper2"
+															: ""
+													} `}>
+													<span
+														style={
+															route.pathname ===
+															"/"
+																? active
+																: {}
+														}
+														className="home-pages-routes-inner-name-container">
+														<p>Home</p>
+													</span>
+												</span>
+											</Link>
+											<Link href="/#showcase">
+												<span className="home-pages-routes-inner-name-wrapper">
+													<span
+														style={
+															route.pathname ===
+															"/#projects"
+																? active
+																: {}
+														}
+														className="home-pages-routes-inner-name-container">
+														<p>Showcase</p>
+													</span>
+												</span>
+											</Link>
+											<span className="home-pages-routes-inner-name-wrapper">
+												<span
+													onClick={() => {
+														setopenabout(true);
+													}}
+													className="home-pages-routes-inner-name-container">
+													<p>About Us</p>
+												</span>
 											</span>
-										</span>
-										<span className="home-pages-routes-inner-name-wrapper">
-											<span
-												style={
-													route.pathname ===
-													"/#projects"
-														? active
-														: {}
-												}
-												className="home-pages-routes-inner-name-container">
-												<Link href="/#showcase">
-													Showcase
-												</Link>
-											</span>
-										</span>
-										<span className="home-pages-routes-inner-name-wrapper">
-											<span
-												onClick={() => {
-													setopenabout(true);
-												}}
-												className="home-pages-routes-inner-name-container">
-												<p>About Us</p>
-											</span>
-										</span>
+										</div>
 									</div>
 								</div>
 							</div>
