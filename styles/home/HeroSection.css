@@ -688,7 +688,7 @@
     position: absolute;
     background-color: var(--SecondBackgroundColor);
     border-radius: 10px;
-    box-shadow: var(----tagBoxShadow2);
+    box-shadow: var(--tagBoxShadow2);
     left: -150px;
     top: 430px;
     display: flex;
@@ -705,7 +705,7 @@
     position: absolute;
     background-color: var(--SecondBackgroundColor);
     border-radius: 10px;
-    box-shadow: var(----tagBoxShadow3);
+    box-shadow: var(--tagBoxShadow3);
     left: -80px;
     top: 200px;
     display: flex;
