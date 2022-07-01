@@ -57,16 +57,32 @@ const AboutOverlay = () => {
 								<h3> YOKA KNUST</h3>
 							</span>
 							<p className="about">
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Officia dolores at
-								voluptatibus, magni animi et nihil suscipit
-								natus quo expedita esse assumenda quasi iste
-								nostrum eveniet excepturi, sapiente quos fuga.
-								Dolorem id sequi at voluptatem provident aliquam
-								iste nulla in velit delectus, rem repellendus
-								odio itaque reprehenderit quaerat nesciunt
-								minus. Officiis esse earum eligendi eius nisi
-								error, suscipit minus accusamus? lorem*5
+								I'm Boye Owusu Kwame. A web developer and
+								electronic enthusiast. A Computer Engineering
+								student between the year 2019 and 2023.
+								<br></br>
+							{" "}
+								I'm a Ghanaian and I had my tertairy education
+								at the Kwame Nkrumah Unviversity of Science and
+								Technology(KNUST). I grew interest in web
+								development during the COVID-19 period when the
+								whole world was not in normal times. The
+								idleness at home drove me to research on web
+								development.
+								<br></br>
+								{" "}
+								After surfing the internet for weeks, I launched
+								a hundred days of Code period for myself. This
+								initiative helped me to be determined and then
+								focused. I also realized a lot of problems I can
+								solve with web development in my society or in
+								the Country.
+								<br></br>
+							
+								Please contact me for your personal
+								website,business website, blogging website,
+								organizational website and E-commerce website
+								👨🏿‍💻🎉🤩📞
 							</p>
 						</div>
 						{/* <div className="aboutoverlay-s-handle-wrapper">
