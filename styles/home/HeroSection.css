@@ -566,6 +566,7 @@ animation: mymove 2s ease-in-out infinite 100ms alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #B06C6C;
+animation: mymove2 2s ease-in-out infinite alternate;
 
 }
 
@@ -574,7 +575,7 @@ animation: mymove 2s ease-in-out infinite 100ms alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #BE93B2;
-/* animation: mymove 2s infinite  alternate; */
+animation: mymove2 2s ease-in-out infinite  alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot3 {
@@ -582,7 +583,7 @@ animation: mymove 2s ease-in-out infinite 100ms alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #D3C593;
-/* animation: mymove 2s infinite  alternate; */
+animation: mymove2 2s ease-in-out infinite  alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot4 {
@@ -590,7 +591,7 @@ animation: mymove 2s ease-in-out infinite 100ms alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #86B974;
-/* animation: mymove 2s infinite  alternate; */
+animation: mymove2 2s ease-in-out infinite  alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot5 {
@@ -598,7 +599,7 @@ animation: mymove 2s ease-in-out infinite 100ms alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #87C7C7;
-/* animation: mymove 2s infinite  alternate; */
+animation: mymove2 2s ease-in-out infinite  alternate;
 }
 
 .herosection-content-image-service-text-wrapper {
@@ -611,7 +612,7 @@ animation: mymove 2s ease-in-out infinite 100ms alternate;
     flex-direction: column;
     font-weight: bold;
     font-size: 1rem;
-/* animation: mymove 2s infinite alternate; */
+animation: mymove2 2s ease-in-out infinite alternate;
 }
 
 
@@ -655,7 +656,7 @@ animation: mymove2 2s ease-in-out infinite 100ms alternate;
     top: 430px;
     display: flex;
     align-items: center;
-/* animation: mymove3 2s ease-in-out infinite 100ms alternate; */
+animation: mymove2 2s ease-in-out infinite 100ms alternate;
 
 }
 
@@ -672,7 +673,7 @@ animation: mymove2 2s ease-in-out infinite 100ms alternate;
     top: 200px;
     display: flex;
     align-items: center;
-/* animation: mymove4 2s ease-in-out infinite 100ms alternate; */
+animation: mymove2 2s ease-in-out infinite 100ms alternate;
 
 }
 
