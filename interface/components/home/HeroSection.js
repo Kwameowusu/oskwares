@@ -20,9 +20,11 @@ import {
 import { ActionContext } from "../../lib/contextapis/ActionsProviders";
 import AboutOverlay from "../overlays/AboutOverlay";
 import { Slide } from "react-awesome-reveal";
+import { ThemeContext } from "../../lib/contextapis/ThemeProvider";
 
 const HeroSection = () => {
 	const { openabout, setopenabout } = useContext(ActionContext);
+    const { Changetheme } = useContext(ThemeContext);
 
 	const route = useRouter();
 	const active = {
@@ -277,7 +279,9 @@ const HeroSection = () => {
 						</div>
 						<div className="herosection-content-cv-theme-wrapper">
 							<div className="herosection-content-cv-theme-container">
-								<span className="herosection-content-theme-wrapper">
+								<span
+									onClick={Changetheme}
+									className="herosection-content-theme-wrapper">
 									<MoonIcon
 										className="moon"
 										style={{

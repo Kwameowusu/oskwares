@@ -160,7 +160,6 @@
     border-radius: 8px;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
 
     padding-top: 8px;
     padding-bottom: 8px;
@@ -171,7 +170,6 @@
 }
 
 .home-pages-routes-dropdown-container {
-
     position: relative;
 
 }
@@ -200,15 +198,16 @@
 
 
 .home-pages-routes-inner-name-wrapper {
+    visibility: hidden;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 20px;
     position: relative;
-    visibility: hidden;
 
-}
+    overflow: hidden;
+    }
 
 .home-pages-routes-inner-name-wrapper2::before {
     content: '';
@@ -305,7 +304,7 @@
 }
 
 .herosection-nav-button-link:hover {
-    background-color: rgb(231, 231, 231);
+    background-color: var(--navhover);
 }
 
 .herosection-nav-button-link-active::after {
@@ -318,6 +317,7 @@
     margin-top: 30px;
     /* padding-left: 1px; */
     animation: navbuttonsUnderline 200ms ease-in;
+    z-index: 100;
 
 }
 
@@ -533,7 +533,7 @@
 
 .herosection-content-image-container img {
     top: -20px !important;
-            filter: saturate(0.6) brightness(0.6) ;
+            filter: var(--imageFilter);
             
 }
 

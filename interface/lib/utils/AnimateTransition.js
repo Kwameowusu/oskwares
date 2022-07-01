@@ -12,7 +12,7 @@ const AnimateTransition = ({
 
 
 	useEffect(() => {
-console.log(detailsError)
+// console.log(detailsError)
 
 		if (detailsError === true && promptWrapeprClassName === "yes" ) {
 			// console.log(nodeRef.current.childNodes[0])
@@ -37,7 +37,7 @@ console.log(detailsError)
 		if (detailsError === false && promptWrapeprClassName === "yes") {
 			nodeRef.current.childNodes[0].classList.remove(`${EnterAnimate}`);
 			nodeRef.current.childNodes[0].classList.add(`${ExitAnimate}`);
-			nodeRef.current.style.backgroundColor="#1c230e00";
+			nodeRef.current.style.backgroundColor = "#000000a3";
 
 			const timer = setTimeout(() => {
 				nodeRef.current.classList.remove(`promptShowAnimate`);
@@ -45,7 +45,7 @@ console.log(detailsError)
 					`${ExitAnimate}`
 				);
 				nodeRef.current.classList.add("promptHideAnimate");
-			}, Number(timeOut) * 0.80);
+			}, Number(timeOut) * 0.70);
 			return () => clearTimeout(timer);
 
 
@@ -58,7 +58,7 @@ console.log(detailsError)
 				nodeRef.current.classList.remove(`promptShowAnimate`);
 				nodeRef.current.classList.remove(`${ExitAnimate}`);
 				nodeRef.current.classList.add("promptHideAnimate");
-			}, Number(timeOut) * 0.80);
+			}, Number(timeOut) * 0.70);
 			return () => clearTimeout(timer);
 		}
 	}, [

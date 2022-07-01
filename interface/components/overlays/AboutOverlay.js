@@ -15,7 +15,7 @@ const AboutOverlay = () => {
 		<>
 			<AnimateTransition
 				promptWrapeprClassName="yes"
-				timeOut="300"
+				timeOut="400"
 				EnterAnimate="slideInUp"
 				ExitAnimate="slideOutDown"
 				detailsError={openabout}
@@ -39,6 +39,7 @@ const AboutOverlay = () => {
 								<img
 									style={{
 										borderRadius: "10px",
+										filter: "var(  --imageFilter)",
 									}}
 									onError={(e) => {
 										e.target.style.display = "none";
