@@ -14,48 +14,83 @@
     font-family: "Montserrat", sans-serif;
     -webkit-tap-highlight-color: transparent;
 
-    --pillSmallBorderRadius: 20px;
-    --pillBigBorderRadius: 40px;
-    --minborderRadius: 6px;
-    --bigBorderRadius: 10px;
-    --textColorDark: #0a142f;
-    --textColorLight: #fbffd1;
-    --textColorLight2: #c3c3c2;
-    --textColorLight3: #ffffff;
 
-    --thinBorderBlack: rgb(192, 192, 192);
-    --wideBoxShadow: 4px 4px 20px 2px rgb(190, 192, 193);
     /* outline: 1px solid red; */
+
+    --whiteColor: white;
+
+    --firstBrandColor: #4B6050;
+    --secondBrandColor: #c09118;
+
+    --minborderRadius: 6px;
+    --bigBorderRadius: 20px;
+    --roundBorderRadius: 50%;
+
+    --grey: #2e302e;
 }
 
 .light {
 
-    --pillSmallBorderRadius: 20px;
-    --pillBigBorderRadius: 40px;
-    --minborderRadius: 6px;
-    --bigBorderRadius: 10px;
-    --textColorDark: #0a142f;
-    --textColorLight: #fbffd1;
-    --textColorLight2: #c3c3c2;
-    --textColorLight3: #ffffff;
+    --deepTextColor: #262d27;
 
-    --thinBorderBlack: rgb(192, 192, 192);
+    --faintTextColor: #5c5c51;
+    --firstbrandColTextColor: #4B6050;
+
+    --firstBrandColor: #4B6050;
+    --secondBrandColor: #c09118;
+    --darkersecondBrandColor: #5E4812;
+
+    --iconCircle: #eaede9;
+    --servBackgroundColor: hsla(0, 0%, 100%, 0.82);
+    --backgroundColor: white;
+    --SecondBackgroundColor: rgb(255, 255, 255);
+    --transparentBackgroundColor: rgba(255, 255, 255, 0.86);
+    --deepbackground: #F0F4F2;
+    --dropDownBackgroundColor: rgba(231, 229, 219, 0.951);
+
+
+    --thinBorderColor: rgb(192, 192, 192);
+    --tagBoxShadow1: 0px 0px 45px 6px rgba(190, 181, 147, 0.28);
+    --tagBoxShadow2: 0px 4px 218px #86B974;
+    --tagBoxShadow3: 0px 0px 45px 6px rgba(190, 181, 147, 0.28);
+
     --wideBoxShadow: 4px 4px 20px 2px rgb(190, 192, 193);
+    --CardBoxShadow: 0 1px 4px -2px rgb(119, 128, 119),
+        inset 0 1px 0 rgba(210, 228, 207, 0.838);
+    --imageFilter:            filter: saturate(0.6) brightness(0.6) ;
+
     /* outline: 1px solid red; */
+    /* --textColorDark: #0a142f;
+        --textColorLight: #fbffd1;
+        --textColorLight2: #c3c3c2;
+        --textColorLight3: #ffffff; */
 }
 
 .dark {
-    --pillSmallBorderRadius: 20px;
-    --pillBigBorderRadius: 40px;
-    --minborderRadius: 6px;
-    --bigBorderRadius: 10px;
-    --textColorDark: #0a142f;
-    --textColorLight: #fbffd1;
-    --textColorLight2: #c3c3c2;
-    --textColorLight3: #ffffff;
+    --deepTextColor: #ffffff;
 
-    --thinBorderBlack: rgb(192, 192, 192);
-    --wideBoxShadow: 4px 4px 20px 2px rgb(190, 192, 193);
+    --faintTextColor: #5c5c51;
+    --firstBrandColTextColor: #ffffff;
+
+    --firstBrandColor: #4B6050;
+    --secondBrandColor: #c09118;
+    --darkersecondBrandColor: #5E4812;
+
+    --iconCircle: #2e302e;
+    --servBackgroundColor: hsla(0, 0%, 0%, 0.82);
+    --backgroundColor: rgb(0, 0, 0);
+    --SecondBackgroundColor: rgb(19, 19, 18);
+    --deepbackground: #14130D;
+    --transparentBackgroundColor: rgba(0, 0, 0, 0.96);
+    --dropDownBackgroundColor: rgba(15, 16, 13, 0.993);
+
+    --thinBorderColor: rgb(44, 47, 44);
+    --tagBoxShadow1: 0px 0px 45px 6px rgba(190, 181, 147, 0);
+    --tagBoxShadow2: 0px 4px 218px #86b97400;
+    --tagBoxShadow3: 0px 0px 45px 6px rgba(190, 181, 147, 0);
+    --wideBoxShadow: 4px 4px 20px 2px rgb(9, 9, 9);
+    --CardBoxShadow: 0 1px 4px -2px rgb(30, 31, 30),
+        inset 0 1px 0 rgba(28, 30, 27, 0.838);
     /* outline: 1px solid red; */
 }
 

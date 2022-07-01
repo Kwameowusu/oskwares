@@ -26,7 +26,7 @@ const HeroSection = () => {
 
 	const route = useRouter();
 	const active = {
-		backgroundColor: "#ffffff",
+		backgroundColor: " var(--backgroundColor)",
 		paddingLeft: "10px",
 		fontWeight: "700",
 	};
@@ -66,7 +66,7 @@ const HeroSection = () => {
 									<button className="herosection-navbar-menu-button">
 										<DotsHorizonIcons
 											style={{
-												color: "#828282",
+												color: "var(--faintTextColor)",
 												fontSize: "18px",
 											}}
 										/>
@@ -281,7 +281,7 @@ const HeroSection = () => {
 									<MoonIcon
 										className="moon"
 										style={{
-											color: "#4F4F4F",
+											color: "var(--faintTextColor)",
 											fontSize: "30px",
 										}}
 									/>
@@ -291,7 +291,7 @@ const HeroSection = () => {
 										{" "}
 										<DownloadIcon
 											style={{
-												color: "#828282",
+												color: "var(--faintTextColor)",
 												fontSize: "25px",
 											}}
 										/>{" "}

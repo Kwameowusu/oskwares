@@ -28,7 +28,7 @@ const AboutOverlay = () => {
 								className="overlay-close-container">
 								<TimesIcon
 									style={{
-										color: "#4F4F4F",
+										color: "var(--faintTextColor)",
 										fontSize: "25px",
 									}}
 								/>

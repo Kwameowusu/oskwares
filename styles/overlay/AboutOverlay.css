@@ -11,7 +11,7 @@
 }
 
 .aboutoverlay-container {
-    background-color: white;
+    background-color: var(--backgroundColor);
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -31,10 +31,10 @@
     font-size: 18px;
     border: none;
     outline: none;
-    color: var(--textColorDark);
+    color: var(--deepTextColor);
     height: 40px;
     width: 40px;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 50%;
     box-shadow: var(--wideBoxShadow);
     display: flex;
@@ -42,17 +42,17 @@
     justify-content: center;
 }
 
-.overlay-close-container svg path {
+/* .overlay-close-container svg path {
     stroke: var(--textColorDark);
-}
+} */
 
 .aboutoverlay-close-wrapper button:active {
-    background-color: #ebebeb;
+    opacity: 0.6;
 }
 
 .aboutoverlay-brand-logo {
     height: 70px;
-    border-bottom: 1px solid var(--thinBorderBlack);
+    border-bottom: 1px solid var(--thinBorderColor);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -65,7 +65,7 @@
 }
 
 .aboutovelay-brand-logo-circle {
-    /* border: 1px solid var(--thinBorderBlack); */
+    /* border: 1px solid var(--thinBorderColor); */
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -92,7 +92,7 @@
 }
 
 .aboutoverlay-brand-story .about {
-    color: var(--darkTextColor);
+    color: var(--deepTextColor);
     text-align: center;
     padding: 10px;
     white-space: pre-wrap;
@@ -101,7 +101,7 @@
 }
 
 .aboutoverlay-brand-story .privacy {
-    color: var(--textColorWhite);
+    color: var(--deepTextColor);
     /* text-align: center; */
     padding: 10px;
     white-space: pre-wrap;
@@ -143,14 +143,12 @@
     justify-content: center;
     padding: 10px;
     height: 60px;
-    border-top: 1px solid var(--thinBorderBlack);
+    border-top: 1px solid var(--thinBorderColor);
 }
 
 @media (max-width: 900px) {
     .aboutoverlay-container {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
+     
         width: 100%;
         height: 95%;
         justify-content: center;

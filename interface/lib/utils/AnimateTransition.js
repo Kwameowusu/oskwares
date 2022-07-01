@@ -45,7 +45,7 @@ console.log(detailsError)
 					`${ExitAnimate}`
 				);
 				nodeRef.current.classList.add("promptHideAnimate");
-			}, Number(timeOut) * 0.40);
+			}, Number(timeOut) * 0.80);
 			return () => clearTimeout(timer);
 
 
@@ -58,7 +58,7 @@ console.log(detailsError)
 				nodeRef.current.classList.remove(`promptShowAnimate`);
 				nodeRef.current.classList.remove(`${ExitAnimate}`);
 				nodeRef.current.classList.add("promptHideAnimate");
-			}, Number(timeOut) * 0.40);
+			}, Number(timeOut) * 0.80);
 			return () => clearTimeout(timer);
 		}
 	}, [

@@ -7,6 +7,7 @@ import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
 
 function MyApp({ Component, pageProps }) {
+      
 	return (
 		<>
 			<ThemeProvider>
