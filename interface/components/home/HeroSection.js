@@ -139,7 +139,7 @@ const HeroSection = () => {
 									</div>
 								</Link>
 								<Link
-									href="#showcase"
+									href="/"
 									className="herosection-nav-button-link-wrapper">
 									<div className="herosection-nav-button-link-container">
 										<span className="herosection-nav-button-link">
@@ -177,18 +177,22 @@ const HeroSection = () => {
 							</span>
 
 							<div className="herosection-content-calltopaction-wrapper">
-								<button>
-									<p>Hire me</p>
-								</button>
+								<Link href="mailto:daarich470@gmail.com">
+									<button>
+										<p>Hire me</p>
+									</button>
+								</Link>
 							</div>
 							<div className="herosection-content-social-wrapper">
 								<button className="github">
-									<GitHubIcon
-										style={{
-											color: "white",
-											fontSize: "26px",
-										}}
-									/>
+									<Link href="https://github.com/Kwameowusu">
+										<GitHubIcon
+											style={{
+												color: "white",
+												fontSize: "26px",
+											}}
+										/>
+									</Link>
 								</button>
 								<span className="herosection-content-social-container">
 									<Slide
@@ -197,37 +201,46 @@ const HeroSection = () => {
 										cascade="true"
 										duration={500}
 										fraction={0.8}>
+										<Link href="https://twitter.com/B_Owusu_kwame">
+											<button className="twitter">
+												<TwitterIcon
+													style={{
+														color: "white",
+														fontSize: "18px",
+													}}
+												/>
+											</button>
+										</Link>
+
 										<button className="twitter">
-											<TwitterIcon
-												style={{
-													color: "white",
-													fontSize: "18px",
-												}}
-											/>
+											<Link href="https://www.facebook.com/kwame.owusu.12382923">
+												<FacebookIcon
+													style={{
+														color: "white",
+														fontSize: "18px",
+													}}
+												/>
+											</Link>
 										</button>
 										<button className="twitter">
-											<FacebookIcon
-												style={{
-													color: "white",
-													fontSize: "18px",
-												}}
-											/>
+											<Link href="https://www.linkedin.com/in/kwame-owusu-osk/">
+												<LinkedInIcon
+													style={{
+														color: "white",
+														fontSize: "18px",
+													}}
+												/>
+											</Link>
 										</button>
 										<button className="twitter">
-											<LinkedInIcon
-												style={{
-													color: "white",
-													fontSize: "18px",
-												}}
-											/>
-										</button>
-										<button className="twitter">
-											<InstagramIcon
-												style={{
-													color: "white",
-													fontSize: "18px",
-												}}
-											/>
+											<Link href="https://www.instagram.com/b_owusu_kwame/">
+												<InstagramIcon
+													style={{
+														color: "white",
+														fontSize: "18px",
+													}}
+												/>
+											</Link>
 										</button>
 									</Slide>
 								</span>

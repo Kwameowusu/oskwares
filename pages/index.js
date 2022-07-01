@@ -16,7 +16,7 @@ export default function Home() {
 				/>
 
 				<link rel="canonical" href={`https://oskwares.vercel.app/`} />
-				<meta name="theme-color" content="" />
+				<meta name="theme-color" content="#000000" />
 
 				<meta
 					name="facebook-domain-verification"

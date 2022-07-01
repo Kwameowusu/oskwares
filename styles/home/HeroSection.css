@@ -100,9 +100,10 @@
 
 .herosection-navbar-brand-name p {
     font-size: 2.2rem;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     font-style: italic;
     color: var(--secondBrandColor);
+    font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -380,7 +381,7 @@
 }
 
 .herosection-content-heading s {
-    transform: rotate(305deg);
+    transform: rotate(290deg);
     text-decoration: none;
     position: absolute;
     animation: enlargeHand 2s infinite 800ms alternate;
@@ -391,11 +392,11 @@
 
 @keyframes enlargeHand {
     from {
-        transform: rotate(305deg) scale(1.2);
+        transform: rotate(290deg) scale(1.5);
     }
 
     to {
-        transform: rotate(305deg) scale(0.6);
+        transform: rotate(290deg) scale(0.8);
     }
 }
 
