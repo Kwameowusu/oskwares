@@ -31,7 +31,7 @@ class MyDocument extends Document {
 				<body className="dark">
 					<Main />
 					<NextScript />
-                    <script src=""></script>
+                   
 				</body>
 			</Html>
 		);
