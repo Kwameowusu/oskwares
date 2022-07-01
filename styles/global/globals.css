@@ -295,11 +295,30 @@ body {
 
 @keyframes mymove2 {
     0% {
-        top: -10px;
+        top: 37px;
     }
 
     100% {
-        top: 10px;
+        top: 43px;
+    }
+}
+@keyframes mymove3 {
+    0% {
+        top: 435px;
+    }
+
+    100% {
+        top: 425px;
+    }
+}
+
+@keyframes mymove4 {
+    0% {
+        top: 200px;
+    }
+
+    100% {
+        top: 205px;
     }
 }
 
