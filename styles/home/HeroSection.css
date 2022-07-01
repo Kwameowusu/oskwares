@@ -151,20 +151,20 @@
 
 .home-pages-routes-dropdown {
     position: absolute;
-    width: 180px;
-    background: rgba(255, 255, 255, 0.82);
-    backdrop-filter: blur(30px);
-    display: none;
+    width: 0px;
+    background: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(15px);
+    display: block;
 
-    box-shadow: 0 1px 4px -2px rgb(0, 0, 0),
-        inset 0 1px 0 rgba(144, 144, 144, 0.838);
+    box-shadow: 0 1px 4px -2px rgb(119, 128, 119),
+        inset 0 1px 0 rgba(210, 228, 207, 0.838);
     border-radius: 8px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    animation-name: dropDown;
+    /* animation-name: dropDown;
     animation-duration: 170ms;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
     padding-top: 8px;
     padding-bottom: 8px;
     right: 0;
@@ -185,11 +185,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    white-space: break-spaces;
+    height: 40px;
+    /* white-space: break-spaces;
     animation-name: dropDown2;
     animation-duration: 170ms;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 @keyframes dropDown2 {
@@ -234,8 +234,14 @@
 
 .herosection-navbar-menu-button-container:hover .home-pages-routes-dropdown {
     display: block;
+    transition: all 170ms ease-in-out;
+    width: 230px;
 }
 
+.herosection-navbar-menu-button-container:hover .home-pages-routes-dropdown > .home-pages-routes-inner-name-wrapper {
+    transition: all 170ms ease-in-out;
+    height: 50px;
+}
 
 .herosection-nav-button-link-wrapper {
     height: 100%;
@@ -335,9 +341,9 @@
     padding-right: 5px;
     border-right: 0px solid orange;
     animation:
-        typing 3.5s steps(60, end)  infinite ,
+        typing 3.5s steps(60, end) infinite,
         blink-caret .95s step-end infinite;
-        
+
 }
 
 .herosection-content-heading strong {
@@ -476,7 +482,7 @@
     margin-top: 50px;
     margin-left: 20px;
     transform: rotate(32deg);
-animation: mymove 2s ease-in-out infinite 100ms alternate;
+    animation: mymove 1.5s ease-in-out infinite alternate;
 
 }
 
@@ -516,7 +522,7 @@ animation: mymove 2s ease-in-out infinite 100ms alternate;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .herosection-content-image-services-container {
@@ -566,7 +572,7 @@ animation: mymove 2s ease-in-out infinite 100ms alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #B06C6C;
-animation: mymove2 2s ease-in-out infinite alternate;
+    animation: mymove2 1.5s ease-in-out infinite alternate;
 
 }
 
@@ -575,7 +581,7 @@ animation: mymove2 2s ease-in-out infinite alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #BE93B2;
-animation: mymove2 2s ease-in-out infinite  alternate;
+    animation: mymove2 1.5s ease-in-out infinite alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot3 {
@@ -583,7 +589,7 @@ animation: mymove2 2s ease-in-out infinite  alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #D3C593;
-animation: mymove2 2s ease-in-out infinite  alternate;
+    animation: mymove2 1.5s ease-in-out infinite alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot4 {
@@ -591,7 +597,7 @@ animation: mymove2 2s ease-in-out infinite  alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #86B974;
-animation: mymove2 2s ease-in-out infinite  alternate;
+    animation: mymove2 1.5s ease-in-out infinite alternate;
 }
 
 .herosection-content-image-services-dot-wrapper .dot5 {
@@ -599,7 +605,7 @@ animation: mymove2 2s ease-in-out infinite  alternate;
     height: 20px;
     border-radius: 50%;
     background-color: #87C7C7;
-animation: mymove2 2s ease-in-out infinite  alternate;
+    animation: mymove2 1.5s ease-in-out infinite alternate;
 }
 
 .herosection-content-image-service-text-wrapper {
@@ -612,7 +618,7 @@ animation: mymove2 2s ease-in-out infinite  alternate;
     flex-direction: column;
     font-weight: bold;
     font-size: 1rem;
-animation: mymove2 2s ease-in-out infinite alternate;
+    animation: mymove2 1.5s ease-in-out infinite alternate;
 }
 
 
@@ -629,7 +635,7 @@ animation: mymove2 2s ease-in-out infinite alternate;
     top: 40px;
     display: flex;
     align-items: center;
-animation: mymove2 2s ease-in-out infinite 100ms alternate;
+    animation: mymove2 1.5s ease-in-out infinite 300ms alternate;
 }
 
 
@@ -656,7 +662,7 @@ animation: mymove2 2s ease-in-out infinite 100ms alternate;
     top: 430px;
     display: flex;
     align-items: center;
-animation: mymove2 2s ease-in-out infinite 100ms alternate;
+    animation: mymove2 1.5s ease-in-out infinite 200ms alternate;
 
 }
 
@@ -673,7 +679,7 @@ animation: mymove2 2s ease-in-out infinite 100ms alternate;
     top: 200px;
     display: flex;
     align-items: center;
-animation: mymove2 2s ease-in-out infinite 100ms alternate;
+    animation: mymove2 1.5s ease-in-out infinite 100ms alternate;
 
 }
 
@@ -706,7 +712,7 @@ animation: mymove2 2s ease-in-out infinite 100ms alternate;
 }
 
 .herosection-content-cv-theme-container .moon {
-animation: myswing 1s ease-in-out infinite  alternate;
+    animation: myswing 1s ease-in-out infinite alternate;
 }
 
 .herosection-content-cv-theme-container .download-cv {
@@ -770,8 +776,8 @@ animation: myswing 1s ease-in-out infinite  alternate;
     .herosection-content-image-tag1 {
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
         right: 0px;
 
@@ -781,8 +787,8 @@ animation: myswing 1s ease-in-out infinite  alternate;
     .herosection-content-image-tag2 {
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
         left: -150px;
         top: 430px;
@@ -792,9 +798,8 @@ animation: myswing 1s ease-in-out infinite  alternate;
     .herosection-content-image-tag3 {
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-
+        padding-top: 15px;
+        padding-bottom: 15px;
         left: -80px;
         top: 200px;
 
@@ -945,8 +950,8 @@ animation: myswing 1s ease-in-out infinite  alternate;
     .herosection-content-image-tag2 {
         padding-left: 8px;
         padding-right: 8px;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         border-radius: 5px;
         left: -10px;
         top: 230px;
@@ -956,9 +961,9 @@ animation: myswing 1s ease-in-out infinite  alternate;
     .herosection-content-image-tag3 {
         padding-left: 8px;
         padding-right: 8px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
         left: -20px;
         top: 120px;
 

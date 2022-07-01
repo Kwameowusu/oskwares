@@ -287,17 +287,17 @@ body {
 
 @keyframes mymove {
     0% {
-        transform: translate(0, 10px) rotate(32deg);
+        transform: translate(0, -5px) rotate(32deg);
     }
 
     100% {
-        transform: translate(0, 5px) rotate(32deg);
+        transform: translate(0, 7px) rotate(32deg);
     }
 }
 
 @keyframes mymove2 {
     0% {
-        transform: translate(0, 10px);
+        transform: translate(0, -6px);
     }
 
     100% {
