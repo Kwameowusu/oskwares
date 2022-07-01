@@ -1,4 +1,4 @@
-import React, { useContext,useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -22,23 +22,22 @@ import AboutOverlay from "../overlays/AboutOverlay";
 import { Slide } from "react-awesome-reveal";
 
 const HeroSection = () => {
-	const {openabout, setopenabout } = useContext(ActionContext);
+	const { openabout, setopenabout } = useContext(ActionContext);
 
 	const route = useRouter();
 	const active = {
 		backgroundColor: "#ffffff",
-		paddingLeft: "18px",
+		paddingLeft: "10px",
 		fontWeight: "700",
 	};
 
-    	useEffect(() => {
-			if (openabout === true) {
-				document.querySelector("body").style.overflow = "hidden";
-			}
-			if (openabout === null || openabout === false)
-				document.querySelector("body").style.overflow = "initial";
-		}, [openabout]);
-
+	useEffect(() => {
+		if (openabout === true) {
+			document.querySelector("body").style.overflow = "hidden";
+		}
+		if (openabout === null || openabout === false)
+			document.querySelector("body").style.overflow = "initial";
+	}, [openabout]);
 
 	return (
 		<>
@@ -73,7 +72,12 @@ const HeroSection = () => {
 										/>
 									</button>
 									<div className="home-pages-routes-dropdown">
-										<span className="home-pages-routes-inner-name-wrapper">
+										<span
+											className={`home-pages-routes-inner-name-wrapper ${
+												route.pathname === "/"
+													? "home-pages-routes-inner-name-wrapper2"
+													: ""
+											} `}>
 											<span
 												style={
 													route.pathname === "/"
@@ -183,9 +187,7 @@ const HeroSection = () => {
 										direction="up"
 										cascade="true"
 										duration={500}
-										fraction={0.8}
-                                        
-                                        >
+										fraction={0.8}>
 										<button className="twitter">
 											<TwitterIcon
 												style={{
@@ -272,7 +274,7 @@ const HeroSection = () => {
 							<div className="herosection-content-cv-theme-container">
 								<span className="herosection-content-theme-wrapper">
 									<MoonIcon
-                                    className="moon"
+										className="moon"
 										style={{
 											color: "#4F4F4F",
 											fontSize: "30px",

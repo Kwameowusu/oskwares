@@ -152,7 +152,7 @@
 .home-pages-routes-dropdown {
     position: absolute;
     width: 0px;
-    background: rgba(255, 255, 255, 0.33);
+    background: rgba(222, 225, 202, 0.33);
     backdrop-filter: blur(15px);
     display: block;
 
@@ -185,11 +185,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 20px;
+    position: relative;
     /* white-space: break-spaces;
     animation-name: dropDown2;
     animation-duration: 170ms;
     animation-fill-mode: forwards; */
+}
+.home-pages-routes-inner-name-wrapper2::before {
+    content: '';
+    height: 23px;
+    border-radius: 50px;
+    width: 5px;
+    background-color: #4B6050;
+    position: absolute;
+    left: 9px;
+    /* z-index: 100; */
 }
 
 @keyframes dropDown2 {
@@ -209,7 +220,10 @@
     /* background-color: #ffffff; */
     display: flex;
     align-items: center;
+    /* position: relative; */
 }
+
+
 
 .home-pages-routes-dropdown p {
     color: var(--textColorDark);
@@ -233,14 +247,14 @@
 }
 
 .herosection-navbar-menu-button-container:hover .home-pages-routes-dropdown {
-    display: block;
-    transition: all 170ms ease-in-out;
+  
+    transition: width 300ms linear;
     width: 230px;
 }
 
 .herosection-navbar-menu-button-container:hover .home-pages-routes-dropdown > .home-pages-routes-inner-name-wrapper {
-    transition: all 170ms ease-in-out;
-    height: 50px;
+    transition: height 300ms linear;
+    height: 60px;
 }
 
 .herosection-nav-button-link-wrapper {
