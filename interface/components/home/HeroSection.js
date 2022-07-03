@@ -259,7 +259,8 @@ const HeroSection = () => {
 										src={heroprofile.src}
 										// objectFit="cover"
 										// layout="fill"
-										width={320}
+                                        
+										width={315}
 										height={480}
 									/>
 								</span>
