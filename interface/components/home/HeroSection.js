@@ -95,7 +95,7 @@ const HeroSection = () => {
 													</span>
 												</span>
 											</Link>
-											<Link href="/#showcase">
+											<Link href="#showcase">
 												<span className="home-pages-routes-inner-name-wrapper">
 													<span
 														style={
@@ -139,7 +139,7 @@ const HeroSection = () => {
 									</div>
 								</Link>
 								<Link
-									href="/"
+									href="#showcase"
 									className="herosection-nav-button-link-wrapper">
 									<div className="herosection-nav-button-link-container">
 										<span className="herosection-nav-button-link">
@@ -184,16 +184,17 @@ const HeroSection = () => {
 								</Link>
 							</div>
 							<div className="herosection-content-social-wrapper">
-								<button className="github">
-									<Link href="https://github.com/Kwameowusu">
+								<Link href="https://github.com/Kwameowusu">
+									<a target="_blank" className="github">
 										<GitHubIcon
 											style={{
 												color: "white",
 												fontSize: "26px",
 											}}
 										/>
-									</Link>
-								</button>
+									</a>
+								</Link>
+
 								<span className="herosection-content-social-container">
 									<Slide
 										// triggerOnce="true"
@@ -201,47 +202,49 @@ const HeroSection = () => {
 										cascade="true"
 										duration={500}
 										fraction={0.8}>
-										<Link href="https://twitter.com/B_Owusu_kwame">
-											<button className="twitter">
+										<Link
+											href="https://twitter.com/B_Owusu_kwame"
+											passHref>
+											<a target="_blank" className="twitter">
 												<TwitterIcon
 													style={{
 														color: "white",
 														fontSize: "18px",
 													}}
 												/>
-											</button>
+											</a>
 										</Link>
 
-										<button className="twitter">
-											<Link href="https://www.facebook.com/kwame.owusu.12382923">
+										<Link href="https://www.facebook.com/kwame.owusu.12382923">
+											< a target="_blank" className="twitter">
 												<FacebookIcon
 													style={{
 														color: "white",
 														fontSize: "18px",
 													}}
 												/>
-											</Link>
-										</button>
-										<button className="twitter">
-											<Link href="https://www.linkedin.com/in/kwame-owusu-osk/">
+											</a>
+										</Link>
+										<Link href="https://www.linkedin.com/in/kwame-owusu-osk/">
+											<a target="_blank" className="twitter">
 												<LinkedInIcon
 													style={{
 														color: "white",
 														fontSize: "18px",
 													}}
 												/>
-											</Link>
-										</button>
-										<button className="twitter">
-											<Link href="https://www.instagram.com/b_owusu_kwame/">
+											</a>
+										</Link>
+										<Link href="https://www.instagram.com/b_owusu_kwame/">
+											<a target="_blank" className="twitter">
 												<InstagramIcon
 													style={{
 														color: "white",
 														fontSize: "18px",
 													}}
 												/>
-											</Link>
-										</button>
+											</a>
+										</Link>
 									</Slide>
 								</span>
 							</div>
