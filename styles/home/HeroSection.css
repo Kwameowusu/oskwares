@@ -154,10 +154,12 @@
     position: absolute;
     /* width: 0px; */
     width: 230px;
-    transform: translate3d(35px,-55px,0px) scale3d(0.6,0.5,0);
-    transition: all 200ms ease-in-out;
+    transform: scale(0.8);
+    transform-origin: top right; 
+
+    transition: opacity .25s cubic-bezier(.4, 0, .2, 1), transform .25s cubic-bezier(.4, 0, .2, 1), visibility .25s cubic-bezier(.4, 0, .2, 1);
     background: var(--dropDownBackgroundColor);
-    /* backdrop-filter: blur(15px); */
+
     display: block;
 
     box-shadow: var(--CardBoxShadow);
@@ -168,7 +170,7 @@
     padding-top: 8px;
     padding-bottom: 8px;
     right: -5px;
-    opacity: 0.3;
+    opacity: 0;
     top: 42px;
     visibility: hidden;
 }
@@ -212,7 +214,7 @@
     position: relative;
 
     overflow: hidden;
-    }
+}
 
 .home-pages-routes-inner-name-wrapper2::before {
     content: '';
@@ -260,9 +262,8 @@
 }
 
 .herosection-navbar-menu-button-container:hover .home-pages-routes-dropdown {
-transform: translate3d(0px,-1px,0px) scale3d(1,1,1);
-    /* transition: all 230ms linear; */
-    /* width: 230px; */
+    transform:  scale(1);
+  
     opacity: 1;
     visibility: visible;
 }
@@ -533,8 +534,8 @@ transform: translate3d(0px,-1px,0px) scale3d(1,1,1);
 
 .herosection-content-image-container img {
     /* top: -20px !important;  */
-            filter: var(--imageFilter);
-            
+    filter: var(--imageFilter);
+
 }
 
 .herosection-content-image-services {
