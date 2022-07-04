@@ -389,3 +389,19 @@ html {
         transform: rotate(360deg);
     }
 }
+
+.slideUp {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    /* animation-duration: 200ms; */
+    /* -webkit-animation-duration: 200ms; */
+}
+
+.slideDown {
+    -webkit-transform: translateY(100vh);
+    -ms-transform: translateY(100vh);
+    transform: translateY(100vh);
+    /* animation-duration: 200ms; */
+    /* -webkit-animation-duration: 200ms; */
+}

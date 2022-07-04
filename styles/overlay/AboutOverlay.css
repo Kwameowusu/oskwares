@@ -3,10 +3,10 @@
     inset: 0;
     z-index: 500;
     /* background-color: var(--backgroundColor); */
-    display: none;
+    display: flex;
     align-items: center;
     /* justify-content: center; */
-    transition: all 250ms ease-in-out;
+    transition: all 400ms ease-in-out;
     flex-direction: column-reverse;
 }
 
