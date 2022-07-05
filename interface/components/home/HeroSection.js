@@ -115,7 +115,7 @@ const HeroSection = () => {
 														setopenabout(true);
 													}}
 													className="home-pages-routes-inner-name-container">
-													<p>About Us</p>
+													<p>About me</p>
 												</span>
 											</span>
 										</div>
@@ -329,7 +329,7 @@ const HeroSection = () => {
 											}}
 										/>{" "}
 									</span>
-									<p>Download my CV</p>
+									<p>Resume</p>
 								</span>
 							</div>
 						</div>
