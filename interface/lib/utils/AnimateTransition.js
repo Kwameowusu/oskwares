@@ -19,7 +19,7 @@ const AnimateTransition = ({
 			// nodeRef.current.childNodes[0].style.animationDuration =
 			// 	Number(timeOut) + "ms";
 			setTimeout(() => {
-				nodeRef.current.style.backgroundColor = "#000000b3";
+				nodeRef.current.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
 			}, Number(timeOut) * 0.8);
 		}
 		// else if (detailsError) {
@@ -35,10 +35,12 @@ const AnimateTransition = ({
 
 	useEffect(() => {
 		if (detailsError === false && promptWrapeprClassName === "yes") {
-			nodeRef.current.classList.remove(`${EnterAnimate}`);
-			nodeRef.current.classList.add(`${ExitAnimate}`);
-			nodeRef.current.style.backgroundColor = "#000000b3";
+			nodeRef.current.style.backgroundColor = "#1c230e00";
 
+			setTimeout(() => {
+				nodeRef.current.classList.remove(`${EnterAnimate}`);
+				nodeRef.current.classList.add(`${ExitAnimate}`);
+			}, Number(timeOut) * 0.4);
 			// nodeRef.current.childNodes[0].classList.remove(`${EnterAnimate}`);
 			// nodeRef.current.childNodes[0].classList.add(`${ExitAnimate}`);
 			// nodeRef.current.childNodes[0].classList.remove(`${ExitAnimate}`);
