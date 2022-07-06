@@ -27,7 +27,8 @@ class MyDocument extends Document {
 					/>
 
 					<script
-						fetchpriority="high"
+						pages="*"
+					
 						type="text/javascript"
 						src="/noflash.js"
 						strategy="beforeInteractive"
