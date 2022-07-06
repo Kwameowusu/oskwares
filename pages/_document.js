@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-document-import-in-page */
 import Document, { Html, Head, Main, NextScript } from "next/document";
-// import Script from "next/script";
+import Script from "next/script";
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -26,7 +26,7 @@ class MyDocument extends Document {
 						type="image/x-icon"
 					/>
 
-					<script
+					<Script
 						pages="*"
 					
 						type="text/javascript"

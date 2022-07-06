@@ -10,10 +10,13 @@ import { useEffect, useState } from "react";
 function MyApp({ Component, pageProps }) {
 	const [theme, settheme] = useState(false);
 	useEffect(() => {
+        console.log(window )
+        setTimeout(() => {
 		settheme(!theme);
-        console.log(typeof window === 'undefined')
+            
+        }, 100);
 	}, []);
-        console.log(typeof window );
+     
 
 	return (
 		<>
