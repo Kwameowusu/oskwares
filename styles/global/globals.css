@@ -24,13 +24,13 @@
     --bigBorderRadius: 20px;
     --roundBorderRadius: 50%;
 
-
 }
 
 
 
 :root[theme='light'] {
     /* CSS light */
+    background-color: var(--backgroundColor);
     --deepTextColor: #262d27;
     --faintTextColor: #5c5c51;
     --firstbrandColTextColor: #4B6050;
@@ -53,6 +53,7 @@
 }
 
 :root[theme='dark'] {
+    background-color: var(--backgroundColor);
     --deepTextColor: #e3e7e0;
     --faintTextColor: #5c5c51;
     --firstBrandColTextColor: #e3e7e0;
@@ -75,10 +76,7 @@
     /* outline: 1px solid red; */
 }
 
-body,
-html {
-    background-color: var(--backgroundColor);
-}
+
 
 
 ::-webkit-scrollbar {
