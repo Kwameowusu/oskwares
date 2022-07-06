@@ -25,12 +25,14 @@ class MyDocument extends Document {
 						href="/favicon.ico"
 						type="image/x-icon"
 					/>
-					{/* <Script
-						
+					
+
+					<script
+                    
 						type="text/javascript"
 						src="/noflash.js"
 						strategy="beforeInteractive"
-					/> */}
+					/>
 
 					<link rel="apple-touch-icon" href="/logo192.png" />
 					{/* <script src="https://www.paypal.com/sdk/js?client-id=AUUfR9lIbZPoDdDD5rwCe1D_ekfCsnAL5-rnFy0Zjc_qah80jHEUfwUtd5WqvUdOw_sCnMLWqd1PWao-&currency=USD"  ></script> */}
