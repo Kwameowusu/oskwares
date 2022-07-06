@@ -5,18 +5,21 @@ import "../styles/home/HomeScreen.css";
 import "../styles/home/HeroSection.css";
 import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
-
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }) {
-    
-      
+	const [theme, settheme] = useState(false);
+	useEffect(() => {
+		settheme(!theme);
+        console.log(typeof window === 'undefined')
+	}, []);
+        console.log(typeof window );
+
 	return (
 		<>
-			
-
 			<ThemeProvider>
 				<ActionProvider>
-					<Component {...pageProps} />
+					{theme && <Component {...pageProps} />}
 				</ActionProvider>
 			</ThemeProvider>
 		</>

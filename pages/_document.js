@@ -25,10 +25,9 @@ class MyDocument extends Document {
 						href="/favicon.ico"
 						type="image/x-icon"
 					/>
-					
 
 					<script
-                    
+						fetchpriority="high"
 						type="text/javascript"
 						src="/noflash.js"
 						strategy="beforeInteractive"
