@@ -22,8 +22,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Script
-				pages="*"
-				async
+			
 				type="text/javascript"
 				src="/noflash.js"
 				strategy="beforeInteractive"
