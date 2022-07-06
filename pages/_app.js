@@ -11,7 +11,7 @@ import Script from "next/script";
 function MyApp({ Component, pageProps }) {
 	const [theme, settheme] = useState(false);
 	useEffect(() => {
-        console.log(window )
+       
         setTimeout(() => {
 		settheme(!theme);
             
