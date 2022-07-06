@@ -1,32 +1,32 @@
 (() => {
-	const darkTheme = window.matchMedia("(prefers-color-scheme: light)");
+	const darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
 	const currentTheme = localStorage.getItem("theme");
-	let html = document.getElementsByTagName("html")[0];
+
 
 	let meta = [...document.querySelectorAll("meta")].find(
 		(e) => e.name === "theme-color"
 	);
 
 	if (darkTheme.matches && currentTheme === null) {
-		localStorage.setItem("theme", "light");
-		html.classList.replace(html.className, "light");
-		if (html.className === "light") {
-			meta.content = "#ffffff";
+		localStorage.setItem("theme", "dark");
+		document.documentElement.setAttribute("theme", "dark");
+
+		if (document.documentElement.getAttribute("theme") === "dark") {
+			meta.content = "#000000";
 
 			return;
 		}
 	} else if (currentTheme !== null) {
-		html.classList.replace(html.className, currentTheme);
-		
+		document.documentElement.setAttribute("theme", currentTheme);
 	}
 
-	if (html.className === "light") {
+	if (document.documentElement.getAttribute("theme") === "light") {
 		meta.content = "#ffffff";
 
 		return;
 	}
 
-	if (html.className === "dark") {
+	if (document.documentElement.getAttribute("theme") === "dark") {
 		meta.content = "#000000";
 
 		return;

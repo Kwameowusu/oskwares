@@ -6,20 +6,14 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    --animate-duration: 1s;
-    --animate-delay: 1s;
-    --animate-repeat: 1;
-    /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
     user-select: none;
     font-family: "Montserrat", sans-serif;
     -webkit-tap-highlight-color: transparent;
-    /* transition: all 100ms ease-in; */
-
-
-
-    /* outline: 1px solid red; */
-
+    /* Css anim */
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+    /* common variable */
     --whiteColor: #e3e7e0;
 
     --firstBrandColor: #4B6050;
@@ -30,23 +24,16 @@
     --bigBorderRadius: 20px;
     --roundBorderRadius: 50%;
 
-    --grey: #2e302e;
+
 }
 
-body,
-html {
-    background-color: var(--backgroundColor);
-}
 
-.light {
 
+:root[theme='light'] {
+    /* CSS light */
     --deepTextColor: #262d27;
-
     --faintTextColor: #5c5c51;
     --firstbrandColTextColor: #4B6050;
-
-
-
     --iconCircle: #ffffff;
     --servBackgroundColor: hsla(0, 0%, 100%, 0.82);
     --backgroundColor: white;
@@ -54,29 +41,21 @@ html {
     --transparentBackgroundColor: rgba(255, 255, 255, 0.86);
     --deepbackground: #F0F4F2;
     --dropDownBackgroundColor: rgba(241, 239, 231, 0.951);
-
-
     --thinBorderColor: rgb(192, 192, 192);
     --tagBoxShadow1: 0px 0px 45px 6px rgba(190, 181, 147, 0.28);
     --tagBoxShadow2: 0px 4px 218px #86B974;
     --tagBoxShadow3: 0px 0px 45px 6px rgba(190, 181, 147, 0.28);
-
     --wideBoxShadow: 4px 4px 20px 2px rgb(190, 192, 193);
     --CardBoxShadow: 0 1px 4px -2px rgb(119, 128, 119),
         inset 0 1px 0 rgba(210, 228, 207, 0.838);
     --imageFilter: '';
     --navhover: #e7e7e7;
-
 }
 
-.dark {
+:root[theme='dark'] {
     --deepTextColor: #e3e7e0;
-
     --faintTextColor: #5c5c51;
     --firstBrandColTextColor: #e3e7e0;
-
-
-
     --iconCircle: #2e302e;
     --servBackgroundColor: hsla(0, 0%, 0%, 0.82);
     --backgroundColor: rgb(0, 0, 0);
@@ -84,8 +63,6 @@ html {
     --deepbackground: #14130D;
     --transparentBackgroundColor: rgba(0, 0, 0, 0.94);
     --dropDownBackgroundColor: rgba(32, 34, 27, 0.97);
-
-
     --thinBorderColor: rgb(44, 47, 44);
     --tagBoxShadow1: 0px 0px 45px 6px rgba(190, 181, 147, 0);
     --tagBoxShadow2: 0px 4px 218px #86b97400;
@@ -93,13 +70,15 @@ html {
     --wideBoxShadow: 4px 4px 20px 2px rgb(9, 9, 9);
     --CardBoxShadow: 0 1px 4px -2px rgb(0, 0, 0),
         inset 0 1px 0 rgba(28, 30, 27, 0.838);
-
     --imageFilter: saturate(0.5) brightness(0.7);
-
     --navhover: #eeeeee2c;
     /* outline: 1px solid red; */
 }
 
+body,
+html {
+    background-color: var(--backgroundColor);
+}
 
 
 ::-webkit-scrollbar {

@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html lang="en" className="l">
+			<Html lang="en" theme="dark">
 				<Head>
 					<meta charSet="utf-8" />
 					<meta name="robots" content="index, follow" />
