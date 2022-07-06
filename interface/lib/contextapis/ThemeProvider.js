@@ -35,9 +35,9 @@ const ThemeProvider = ({ children }) => {
 	}, [dashtheme]);
 
 	const Changetheme = () => {
-		let html = document.getElementsByTagName("html")[0];
 
-		if (html.className === "light") {
+
+		if (document.documentElement.getAttribute("theme") === "light") {
 			setdashtheme("dark");
 		} else {
 			setdashtheme("light");
