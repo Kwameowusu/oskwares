@@ -22,7 +22,8 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<ThemeProvider>
 				<ActionProvider>
-					{theme && <Component {...pageProps} />}
+					{/* {theme && } */}
+					<Component {...pageProps} />
 				</ActionProvider>
 			</ThemeProvider>
 		</>
