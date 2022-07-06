@@ -40,7 +40,7 @@ const AnimateTransition = ({
 			setTimeout(() => {
 				nodeRef.current.classList.remove(`${EnterAnimate}`);
 				nodeRef.current.classList.add(`${ExitAnimate}`);
-			}, Number(timeOut) * 0.4);
+			}, Number(timeOut) * 0.3);
 			// nodeRef.current.childNodes[0].classList.remove(`${EnterAnimate}`);
 			// nodeRef.current.childNodes[0].classList.add(`${ExitAnimate}`);
 			// nodeRef.current.childNodes[0].classList.remove(`${ExitAnimate}`);
