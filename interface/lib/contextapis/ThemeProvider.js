@@ -14,7 +14,7 @@ const ThemeProvider = ({ children }) => {
 	}, []);
 
 	useEffect(() => {
-		let body = document.getElementsByTagName("BODY")[0];
+		let html = document.getElementsByTagName("html")[0];
 		// let meta = document.createElement("meta");
 		// meta.name = "theme-color";
 		let meta = [...document.querySelectorAll("meta")].find(
@@ -23,14 +23,14 @@ const ThemeProvider = ({ children }) => {
 
 		if (dashtheme) {
 			localStorage.setItem("theme", dashtheme);
-			body.classList.replace(body.className, dashtheme);
+			html.classList.replace(html.className, dashtheme);
 
-			if (body.className === "dark") {
+			if (html.className === "dark") {
 				meta.content = "#000000";
 				// document.head.appendChild(meta);
 				return;
 			}
-			if (body.className === "light") {
+			if (html.className === "light") {
 				meta.content = "#ffffff";
 				// document.head.appendChild(meta);
 				return;
@@ -39,9 +39,9 @@ const ThemeProvider = ({ children }) => {
 	}, [dashtheme]);
 
 	const Changetheme = () => {
-		let body = document.getElementsByTagName("BODY")[0];
+		let html = document.getElementsByTagName("html")[0];
 
-		if (body.className === "light") {
+		if (html.className === "light") {
 			setdashtheme("dark");
 		} else {
 			setdashtheme("light");

@@ -6,16 +6,19 @@ import "../styles/home/HeroSection.css";
 import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
 
-// import Script from "next/script";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
     
       
 	return (
 		<>
-			{/* <Head> */}
-				{/* <Script src="/noflash.js" strategy="beforeInteractive" /> */}
-			{/* </Head> */}
+			<Script
+        
+				type="text/javascript"
+				src="/noflash.js"
+				strategy="beforeInteractive"
+			/>
 
 			<ThemeProvider>
 				<ActionProvider>
