@@ -6,6 +6,7 @@ import "../styles/home/HeroSection.css";
 import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
 import { useEffect, useState } from "react";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
 	const [theme, settheme] = useState(false);
@@ -20,6 +21,13 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
+			<Script
+				pages="*"
+				async
+				type="text/javascript"
+				src="/noflash.js"
+				strategy="beforeInteractive"
+			/>
 			<ThemeProvider>
 				<ActionProvider>
 					{/* {theme && } */}
