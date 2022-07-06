@@ -5,31 +5,18 @@ import "../styles/home/HomeScreen.css";
 import "../styles/home/HeroSection.css";
 import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
-import { useEffect, useState } from "react";
-import Script from "next/script";
+
 
 function MyApp({ Component, pageProps }) {
-	const [theme, settheme] = useState(false);
-	useEffect(() => {
-       
-        setTimeout(() => {
-		settheme(!theme);
-            
-        }, 100);
-	}, []);
+	
      
 
 	return (
 		<>
-			<Script
-			
-				type="text/javascript"
-				src="/noflash.js"
-				strategy="beforeInteractive"
-			/>
+	 
 			<ThemeProvider>
 				<ActionProvider>
-					{/* {theme && } */}
+				
 					<Component {...pageProps} />
 				</ActionProvider>
 			</ThemeProvider>

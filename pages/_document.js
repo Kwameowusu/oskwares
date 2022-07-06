@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-document-import-in-page */
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
+
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -15,7 +15,7 @@ class MyDocument extends Document {
 					<meta charSet="utf-8" />
 					<meta name="robots" content="index, follow" />
 					<meta name="googlebot" content="index,follow" />
-					{/* <meta name="theme-color" content="" /> */}
+			
 					<meta name="theme-color" />
 
 					<link rel="manifest" href="/manifest.json" />
