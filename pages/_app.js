@@ -5,8 +5,6 @@ import "../styles/home/HomeScreen.css";
 import "../styles/home/HeroSection.css";
 import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
-
-
 function MyApp({ Component, pageProps }) {
 	
      
@@ -16,7 +14,6 @@ function MyApp({ Component, pageProps }) {
 	 
 			<ThemeProvider>
 				<ActionProvider>
-				
 					<Component {...pageProps} />
 				</ActionProvider>
 			</ThemeProvider>

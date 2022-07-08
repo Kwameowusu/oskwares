@@ -35,12 +35,12 @@ const AnimateTransition = ({
 
 	useEffect(() => {
 		if (detailsError === false && promptWrapeprClassName === "yes") {
-			nodeRef.current.style.backgroundColor = "#1c230e00";
+			nodeRef.current.style.backgroundColor = "#00000000";
 
 			setTimeout(() => {
 				nodeRef.current.classList.remove(`${EnterAnimate}`);
 				nodeRef.current.classList.add(`${ExitAnimate}`);
-			}, Number(timeOut) * 0.3);
+			}, Number(timeOut) * 0.2);
 			// nodeRef.current.childNodes[0].classList.remove(`${EnterAnimate}`);
 			// nodeRef.current.childNodes[0].classList.add(`${ExitAnimate}`);
 			// nodeRef.current.childNodes[0].classList.remove(`${ExitAnimate}`);

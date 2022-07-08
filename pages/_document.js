@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-document-import-in-page */
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-
 class MyDocument extends Document {
 	static async getInitialProps(ctx) {
 		const initialProps = await Document.getInitialProps(ctx);
@@ -15,7 +14,7 @@ class MyDocument extends Document {
 					<meta charSet="utf-8" />
 					<meta name="robots" content="index, follow" />
 					<meta name="googlebot" content="index,follow" />
-			
+
 					<meta name="theme-color" />
 
 					<link rel="manifest" href="/manifest.json" />
@@ -31,7 +30,7 @@ class MyDocument extends Document {
 				</Head>
 				<body>
 					<script
-                    type="text/javascript"
+						type="text/javascript"
 						dangerouslySetInnerHTML={{
 							__html: `
                             (() => {
@@ -68,7 +67,7 @@ class MyDocument extends Document {
 		return;
 	}
 })();
-`,
+`
 						}}></script>
 					<Main />
 					<NextScript />
