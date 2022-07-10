@@ -330,6 +330,7 @@ const HeroSection = () => {
 								<span className="download-cv">
 									<a
 										href="https://drive.google.com/uc?export=download&id=1Vhu78Nf_b2aX6x-5vHwc-mVoQh_nRVdZ"
+										target={"_blank"}
 										download
 										className="download-cv-icon">
 										{" "}
@@ -341,8 +342,9 @@ const HeroSection = () => {
 										/>{" "}
 									</a>
 									<a
-                                    className="text"
+										className="text"
 										href="https://drive.google.com/uc?export=download&id=1Vhu78Nf_b2aX6x-5vHwc-mVoQh_nRVdZ"
+										target={"_blank"}
 										download>
 										Resume
 									</a>
