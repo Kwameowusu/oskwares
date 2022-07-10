@@ -452,6 +452,7 @@
     border: none;
     outline: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .herosection-content-social-wrapper {
@@ -769,7 +770,7 @@
     background-color: var(--iconCircle);
 }
 
-.herosection-content-cv-theme-container p {
+.herosection-content-cv-theme-container .text {
     color: var(--darkersecondBrandColor);
     text-decoration: underline;
     padding-left: 20px;

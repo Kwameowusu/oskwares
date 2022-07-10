@@ -35,7 +35,7 @@ const AnimateTransition = ({
 
 	useEffect(() => {
 		if (detailsError === false && promptWrapeprClassName === "yes") {
-			nodeRef.current.style.backgroundColor = "#00000000";
+			nodeRef.current.style.backgroundColor = "";
 
 			setTimeout(() => {
 				nodeRef.current.classList.remove(`${EnterAnimate}`);

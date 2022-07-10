@@ -205,7 +205,9 @@ const HeroSection = () => {
 										<Link
 											href="https://twitter.com/B_Owusu_kwame"
 											passHref>
-											<a target="_blank" className="twitter">
+											<a
+												target="_blank"
+												className="twitter">
 												<TwitterIcon
 													style={{
 														color: "white",
@@ -216,7 +218,9 @@ const HeroSection = () => {
 										</Link>
 
 										<Link href="https://www.facebook.com/kwame.owusu.12382923">
-											< a target="_blank" className="twitter">
+											<a
+												target="_blank"
+												className="twitter">
 												<FacebookIcon
 													style={{
 														color: "white",
@@ -226,7 +230,9 @@ const HeroSection = () => {
 											</a>
 										</Link>
 										<Link href="https://www.linkedin.com/in/kwame-owusu-osk/">
-											<a target="_blank" className="twitter">
+											<a
+												target="_blank"
+												className="twitter">
 												<LinkedInIcon
 													style={{
 														color: "white",
@@ -236,7 +242,9 @@ const HeroSection = () => {
 											</a>
 										</Link>
 										<Link href="https://www.instagram.com/b_owusu_kwame/">
-											<a target="_blank" className="twitter">
+											<a
+												target="_blank"
+												className="twitter">
 												<InstagramIcon
 													style={{
 														color: "white",
@@ -259,7 +267,7 @@ const HeroSection = () => {
 										src={heroprofile.src}
 										// objectFit="cover"
 										// layout="fill"
-                                        
+
 										width={315}
 										height={480}
 									/>
@@ -320,7 +328,10 @@ const HeroSection = () => {
 									)}
 								</span>
 								<span className="download-cv">
-									<span className="download-cv-icon">
+									<a
+										href="https://drive.google.com/uc?export=download&id=1Vhu78Nf_b2aX6x-5vHwc-mVoQh_nRVdZ"
+										download
+										className="download-cv-icon">
 										{" "}
 										<DownloadIcon
 											style={{
@@ -328,8 +339,13 @@ const HeroSection = () => {
 												fontSize: "25px",
 											}}
 										/>{" "}
-									</span>
-									<p>Resume</p>
+									</a>
+									<a
+                                    className="text"
+										href="https://drive.google.com/uc?export=download&id=1Vhu78Nf_b2aX6x-5vHwc-mVoQh_nRVdZ"
+										download>
+										Resume
+									</a>
 								</span>
 							</div>
 						</div>
