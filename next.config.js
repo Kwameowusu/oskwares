@@ -7,7 +7,22 @@ module.exports = withPWA({
 	images: {
 		domains: ["firebasestorage.googleapis.com"],
 	},
-    
+	webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+		config.module.rules.push({
+			test: /\.pdf$/,
+			use: [
+				{
+					loader: "file-loader",
+					options: {
+						name: "[name].[ext]",
+					},
+				},
+			],
+		});
+
+		// Important: return the modified config
+		return config;
+	},
 
 	pwa: {
 		dest: "public",

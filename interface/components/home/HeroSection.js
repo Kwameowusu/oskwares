@@ -4,6 +4,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import AdinkraHeroBack from "../../assets/svgs/AdinkraHeroBack";
 import heroprofile from "../../assets/images/heroprofile.png";
+// import file from "../../../public/Boye_Owusu_Kwame.pdf";
+// import dynamic from "next/dynamic";
+
+// const file = dynamic(() => import("../../../public/Boye_Owusu_Kwame.pdf"), {
+// 	ssr: false,
+// });
 
 import Image from "next/image";
 import { BackSVG } from "../../assets/svgs/BackSVG";
@@ -26,7 +32,7 @@ import { ThemeContext } from "../../lib/contextapis/ThemeProvider";
 const HeroSection = () => {
 	const { openabout, setopenabout } = useContext(ActionContext);
 	const { Changetheme, dashtheme } = useContext(ThemeContext);
-
+	// console.log(file)
 	const route = useRouter();
 	const active = {
 		backgroundColor: " var(--backgroundColor)",
@@ -329,9 +335,12 @@ const HeroSection = () => {
 								</span>
 								<span className="download-cv">
 									<a
-										href="https://drive.google.com/uc?export=download&id=1Vhu78Nf_b2aX6x-5vHwc-mVoQh_nRVdZ"
-										target={"_blank"}
+										// href="https://drive.google.com/uc?export=download&id=1Vhu78Nf_b2aX6x-5vHwc-mVoQh_nRVdZ"
+										href="/Boye_Owusu_Kwame.pdf"
 										download
+										alt="resume"
+										target="_blank"
+										rel="noopener noreferrer"
 										className="download-cv-icon">
 										{" "}
 										<DownloadIcon
@@ -343,7 +352,8 @@ const HeroSection = () => {
 									</a>
 									<a
 										className="text"
-										href="https://drive.google.com/uc?export=download&id=1Vhu78Nf_b2aX6x-5vHwc-mVoQh_nRVdZ"
+										href="/Boye_Owusu_Kwame.pdf"
+										// href="https://drive.google.com/uc?export=download&id=1Vhu78Nf_b2aX6x-5vHwc-mVoQh_nRVdZ"
 										target={"_blank"}
 										download>
 										Resume
