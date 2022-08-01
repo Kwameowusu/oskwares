@@ -364,7 +364,7 @@ const HeroSection = () => {
 					</div>
 				</div>
 			</div>
-			<AboutOverlay />
+			<AboutOverlay  />
 		</>
 	);
 };

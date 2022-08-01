@@ -36,6 +36,8 @@ const AboutOverlay = () => {
 						</div>
 						<div className="aboutoverlay-brand-logo">
 							<span className="aboutovelay-brand-logo-circle">
+                                <img src="" alt="" />
+                                
 								<img
 									style={{
 										borderRadius: "10px",

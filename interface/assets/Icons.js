@@ -18,7 +18,6 @@ export const SunIcon = ({ ...props }) => (
 );
 
 
-
 export const TimesIcon = ({ ...props }) => {
 	return (
 		<svg
