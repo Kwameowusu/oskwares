@@ -34,6 +34,7 @@ class MyDocument extends Document {
 						dangerouslySetInnerHTML={{
 							__html: `
                             (() => {
+                                
 	const darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
 	const currentTheme = localStorage.getItem("theme");
 

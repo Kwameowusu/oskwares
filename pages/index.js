@@ -10,10 +10,11 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Oskwares</title>
-				<meta
+				{/* <meta
 					name="viewport"
 					content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,height=device-height"
-				/>
+				/> */}
+                <meta name="viewport" content= "width=device-width, user-scalable=no"/>
 
 				<link rel="canonical" href={`https://oskwares.vercel.app/`} />
 			

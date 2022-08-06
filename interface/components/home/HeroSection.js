@@ -4,12 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import AdinkraHeroBack from "../../assets/svgs/AdinkraHeroBack";
 import heroprofile from "../../assets/images/heroprofile.png";
-// import file from "../../../public/Boye_Owusu_Kwame.pdf";
-// import dynamic from "next/dynamic";
-
-// const file = dynamic(() => import("../../../public/Boye_Owusu_Kwame.pdf"), {
-// 	ssr: false,
-// });
 
 import Image from "next/image";
 import { BackSVG } from "../../assets/svgs/BackSVG";
@@ -26,7 +20,9 @@ import {
 } from "../../assets/Icons";
 import { ActionContext } from "../../lib/contextapis/ActionsProviders";
 import AboutOverlay from "../overlays/AboutOverlay";
-import { Slide } from "react-awesome-reveal";
+
+import { XyzTransitionGroup } from "@animxyz/react";
+
 import { ThemeContext } from "../../lib/contextapis/ThemeProvider";
 
 const HeroSection = () => {
@@ -50,6 +46,7 @@ const HeroSection = () => {
 
 	return (
 		<>
+    
 			<div className="herosection-wrapper">
 				<div className="herosection-adinkra-background">
 					<div className="herosection-adinkra-background-container">
@@ -202,64 +199,70 @@ const HeroSection = () => {
 								</Link>
 
 								<span className="herosection-content-social-container">
-									<Slide
-										// triggerOnce="true"
-										direction="up"
-										cascade="true"
-										duration={500}
-										fraction={0.8}>
-										<Link
-											href="https://twitter.com/B_Owusu_kwame"
-											passHref>
-											<a
-												target="_blank"
-												className="twitter">
-												<TwitterIcon
-													style={{
-														color: "white",
-														fontSize: "18px",
-													}}
-												/>
-											</a>
-										</Link>
-
-										<Link href="https://www.facebook.com/kwame.owusu.12382923">
-											<a
-												target="_blank"
-												className="twitter">
-												<FacebookIcon
-													style={{
-														color: "white",
-														fontSize: "18px",
-													}}
-												/>
-											</a>
-										</Link>
-										<Link href="https://www.linkedin.com/in/kwame-owusu-osk/">
-											<a
-												target="_blank"
-												className="twitter">
-												<LinkedInIcon
-													style={{
-														color: "white",
-														fontSize: "18px",
-													}}
-												/>
-											</a>
-										</Link>
-										<Link href="https://www.instagram.com/b_owusu_kwame/">
-											<a
-												target="_blank"
-												className="twitter">
-												<InstagramIcon
-													style={{
-														color: "white",
-														fontSize: "18px",
-													}}
-												/>
-											</a>
-										</Link>
-									</Slide>
+									<XyzTransitionGroup
+										appearVisible={{ threshold: 0 }}
+										duration="auto"
+                                        mode="ato-in"
+										xyz="fade-0 hcsc  stagger-2 down-50% duration-10 delay-10 iterate-infinite direction-alternate">
+										<div>
+											<Link
+												href="https://twitter.com/B_Owusu_kwame"
+												passHref>
+												<a
+													target="_blank"
+													className="twitter">
+													<TwitterIcon
+														style={{
+															color: "white",
+															fontSize: "18px",
+														}}
+													/>
+												</a>
+											</Link>
+										</div>
+										<div>
+											<Link href="https://www.facebook.com/kwame.owusu.12382923">
+												<a
+													target="_blank"
+													className="twitter">
+													<FacebookIcon
+														style={{
+															color: "white",
+															fontSize: "18px",
+														}}
+													/>
+												</a>
+											</Link>
+										</div>
+										<div>
+											<Link href="https://www.linkedin.com/in/kwame-owusu-osk/">
+												<a
+													target="_blank"
+													className="twitter">
+													<LinkedInIcon
+														style={{
+															color: "white",
+															fontSize: "18px",
+														}}
+													/>
+												</a>
+											</Link>
+										</div>
+										<div>
+											<Link href="https://www.instagram.com/b_owusu_kwame/">
+												<a
+													target="_blank"
+													className="twitter">
+													<InstagramIcon
+														style={{
+															color: "white",
+															fontSize: "18px",
+														}}
+													/>
+												</a>
+											</Link>
+										</div>
+									</XyzTransitionGroup>
 								</span>
 							</div>
 						</div>
@@ -364,7 +367,7 @@ const HeroSection = () => {
 					</div>
 				</div>
 			</div>
-			<AboutOverlay  />
+			<AboutOverlay />
 		</>
 	);
 };

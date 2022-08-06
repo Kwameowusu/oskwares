@@ -5,6 +5,8 @@ import "../styles/home/HomeScreen.css";
 import "../styles/home/HeroSection.css";
 import "../styles/overlay/AboutOverlay.css";
 import "../styles/projects/ProjectScreen.css";
+import "@animxyz/core";
+
 function MyApp({ Component, pageProps }) {
 	
      

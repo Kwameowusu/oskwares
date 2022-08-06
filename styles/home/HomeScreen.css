@@ -4,3 +4,23 @@
     background-color: var(--backgroundColor);
     justify-content: center;
 }
+
+
+/* .herosection-content-theme-wrapper:before { */
+    /* content: "";
+    display: block;
+    border-radius: 50%;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+   
+    width: 100%;
+    height:100%;
+    background: wheat;
+    transform-origin: center bottom;
+    transform: scale(1);
+    opacity: 1;
+    z-index: 10000;
+    transition: all 300ms ease-in-out; */
+    /* transition: calc(var(--time, 0) * var(--ripple-duration, 600ms)) var(--ripple-easing, linear); */
+/* } */

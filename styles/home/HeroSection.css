@@ -479,7 +479,15 @@
 .herosection-content-social-container {
     display: flex;
     align-items: center;
+
     gap: 15px;
+}
+
+[xyz~="hcsc"]{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+gap: 15px;
 }
 
 .herosection-content-social-wrapper .twitter {
